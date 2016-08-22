@@ -1,0 +1,76 @@
+Num samples: 60
+Num observations: 16510
+Total count: 253246
+Table density (fraction of non-zero values): 0.056
+Table md5 (unzipped): 84261e07ca790f6b65371db4d10f2991
+
+Counts/sample summary:
+ Min: 166.0
+ Max: 30254.0
+ Median: 2103.000
+ Mean: 4220.767
+ Std. dev.: 5371.444
+ Sample Metadata Categories: None provided
+ Observation Metadata Categories: taxonomy
+
+Counts/sample detail:
+ PEP18: 166.0
+ PBW51: 185.0
+ PBW47: 231.0
+ PEP26: 258.0
+ PEP24: 292.0
+ PLL90: 296.0
+ PIS4: 320.0
+ PLL83: 357.0
+ PEP27: 381.0
+ PIS9: 487.0
+ PAM36: 516.0
+ PPO69: 545.0
+ PLL80: 582.0
+ PBW53: 601.0
+ PBW50: 732.0
+ PBW46: 833.0
+ PEP21: 869.0
+ PAM33: 904.0
+ PEP16: 946.0
+ PBW55: 968.0
+ PPO66: 1001.0
+ PBW60: 1039.0
+ PEP23: 1261.0
+ PIS1: 1275.0
+ PLL79: 1299.0
+ PBW52: 1473.0
+ PIS7: 1638.0
+ PBW56: 1753.0
+ PEP30: 2039.0
+ PIS5: 2070.0
+ PAM32: 2136.0
+ PAM44: 2161.0
+ PLL76: 2289.0
+ PIS2: 2418.0
+ PLL89: 2798.0
+ PIS10: 2906.0
+ PBW54: 3456.0
+ PAM31: 3545.0
+ PLL88: 4067.0
+ PIS15: 4713.0
+ PAM45: 4809.0
+ PBW59: 5387.0
+ PEP28: 5446.0
+ PAM35: 5497.0
+ PAM37: 6196.0
+ PPO75: 6350.0
+ PIS11: 6469.0
+ PBW49: 6567.0
+ PLL77: 6893.0
+ PAM39: 7324.0
+ PAM42: 7609.0
+ PAM41: 8124.0
+ PAM40: 8214.0
+ PPO64: 11053.0
+ PAM43: 11475.0
+ PPO72: 11662.0
+ PIS14: 13781.0
+ PPO67: 14216.0
+ PBW58: 20114.0
+ PEP29: 30254.0

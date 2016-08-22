@@ -1,0 +1,79 @@
+Num samples: 63
+Num observations: 44996
+Total count: 441737
+Table density (fraction of non-zero values): 0.031
+Table md5 (unzipped): 2ded97b1c3a9adbec727fc25ef2352db
+
+Counts/sample summary:
+ Min: 856.0
+ Max: 21972.0
+ Median: 5233.000
+ Mean: 7011.698
+ Std. dev.: 5090.014
+ Sample Metadata Categories: None provided
+ Observation Metadata Categories: taxonomy
+
+Counts/sample detail:
+ DG8: 856.0
+ DG7: 1405.0
+ DH8: 1778.0
+ DH2: 1960.0
+ DC5: 1985.0
+ DA8: 2017.0
+ DD8: 2053.0
+ DE7: 2068.0
+ DC7: 2164.0
+ DF7: 2269.0
+ DH7: 2303.0
+ DF5: 2317.0
+ DE4: 2395.0
+ DB7: 2457.0
+ DD7: 2571.0
+ DD4: 2726.0
+ DG5: 2952.0
+ DB8: 3127.0
+ DA2: 3993.0
+ DE6: 4053.0
+ DB5: 4243.0
+ DG3: 4248.0
+ DA7: 4291.0
+ DC8: 4342.0
+ DG4: 4384.0
+ DC6: 4444.0
+ DA4: 4776.0
+ DA3: 4814.0
+ DD6: 4934.0
+ DC2: 4939.0
+ DF8: 5130.0
+ DE5: 5233.0
+ DH6: 5257.0
+ DA5: 5495.0
+ DG6: 5663.0
+ DB2: 5755.0
+ DE2: 5852.0
+ DB4: 5966.0
+ DB6: 6361.0
+ DB3: 6381.0
+ DD5: 6914.0
+ DH5: 7209.0
+ DD3: 7251.0
+ DD2: 7727.0
+ DF3: 9905.0
+ DC3: 10087.0
+ DF6: 10529.0
+ DF4: 10555.0
+ DH4: 11105.0
+ DE3: 11648.0
+ DC4: 11681.0
+ DF1: 11758.0
+ DF2: 11933.0
+ DG2: 12050.0
+ DH3: 12991.0
+ DC1: 14144.0
+ DE1: 14736.0
+ DA6: 15287.0
+ DD1: 16743.0
+ DG1: 17569.0
+ DH1: 17760.0
+ DA1: 20226.0
+ DB1: 21972.0

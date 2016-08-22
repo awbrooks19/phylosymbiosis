@@ -1,0 +1,31 @@
+
+
+##### SET COMMAND LINE COLORIZATION #####
+git config --global color.ui auto
+
+### NAVIGATE TO FOLDER ###
+cd phylosymbiosis
+
+##### INITIALIZE REPOSITORY #####
+git init
+
+### CHECK STATUS ###
+git status
+cat .git/config
+
+##### ADD ALL FILES ##### 
+git add .
+
+### COMMIT FILE CHANGES LOCALLY ###
+git commit -m "PHYLOSYMBIOSIS_V1"
+
+### ADD REMOTE ORIGIN (GITHUB REPO LOCATION) ###
+git remote add origin git@github.com:awbrooks19/phylosymbiosis.git
+
+### COMMIT GIT AS MASTER REPOSITORY ###
+git push -u origin master
+
+
+
+
+

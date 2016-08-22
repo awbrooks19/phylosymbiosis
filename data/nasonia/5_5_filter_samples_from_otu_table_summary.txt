@@ -1,0 +1,77 @@
+Num samples: 62
+Num observations: 43880
+Total count: 520224
+Table density (fraction of non-zero values): 0.032
+
+Counts/sample summary:
+ Min: 2070.0
+ Max: 28234.0
+ Median: 7938.500
+ Mean: 8390.710
+ Std. dev.: 4363.410
+ Sample Metadata Categories: None provided
+ Observation Metadata Categories: taxonomy
+
+Counts/sample detail:
+ AH7: 2070.0
+ AE7: 2165.0
+ AC7: 3478.0
+ AC2: 3488.0
+ AA6: 3736.0
+ AH1: 3778.0
+ AF1: 3844.0
+ AF3: 4127.0
+ AC1: 4148.0
+ AA1: 4161.0
+ AG1: 4252.0
+ AA5: 4281.0
+ AG3: 4308.0
+ AB5: 4309.0
+ AE1: 5373.0
+ AC5: 5578.0
+ AE3: 5672.0
+ AD3: 5762.0
+ AH4: 5839.0
+ AH3: 5994.0
+ AB7: 6117.0
+ AB2: 6123.0
+ AC3: 6351.0
+ AD7: 6632.0
+ AC8: 6742.0
+ AB1: 7195.0
+ AG5: 7405.0
+ AG2: 7766.0
+ AA7: 7770.0
+ AA2: 7779.0
+ AF2: 7877.0
+ AA3: 8000.0
+ AD1: 8103.0
+ AF7: 8349.0
+ AE5: 8536.0
+ AD2: 8724.0
+ AF4: 8859.0
+ AH8: 8940.0
+ AG4: 9079.0
+ AG7: 9343.0
+ AH6: 9412.0
+ AD6: 9415.0
+ AA8: 9616.0
+ AC6: 9695.0
+ AF8: 9758.0
+ AE6: 10366.0
+ AB4: 10456.0
+ AB6: 10736.0
+ AG8: 10781.0
+ AF5: 10781.0
+ AE2: 10822.0
+ AH5: 11071.0
+ AA4: 11316.0
+ AF6: 12358.0
+ AE4: 12685.0
+ AE8: 13012.0
+ AC4: 13623.0
+ AB8: 13806.0
+ AH2: 14082.0
+ AD8: 15008.0
+ AB3: 21138.0
+ AD4: 28234.0

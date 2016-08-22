@@ -1,0 +1,42 @@
+Num samples: 26
+Num observations: 62382
+Total count: 1150359
+Table density (fraction of non-zero values): 0.082
+Table md5 (unzipped): 52d12307cfdda824d09a2ff9c6097e62
+
+Counts/sample summary:
+ Min: 14491.0
+ Max: 179966.0
+ Median: 28769.000
+ Mean: 44244.577
+ Std. dev.: 36573.004
+ Sample Metadata Categories: None provided
+ Observation Metadata Categories: taxonomy
+
+Counts/sample detail:
+ CR464: 14491.0
+ KSG246: 16825.0
+ WLK3: 17352.0
+ US1AZ: 19306.0
+ WLK12: 20105.0
+ KSG242: 20279.0
+ KSG0652: 21958.0
+ KSG477: 23662.0
+ CR334: 27661.0
+ KSG1507: 28284.0
+ CR469: 28297.0
+ KSG0673: 28374.0
+ KSG0647: 28414.0
+ CR2530: 29124.0
+ KSG0660: 29278.0
+ KSG0645: 29366.0
+ CR2528: 30532.0
+ KSG1471: 41048.0
+ CR348: 45957.0
+ WCR464: 54372.0
+ GM173: 58551.0
+ CR457: 70522.0
+ CR95: 84529.0
+ CR89: 95552.0
+ CR470: 106554.0
+ CR458: 179966.0
