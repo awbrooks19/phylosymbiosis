@@ -65,6 +65,7 @@ script_info['optional_options'] = [
  
  # OVERWRITE OUTPUT [-o] #
  make_option('-f','--overwrite',action='store_true', help='Overwite the Output Directory [default: %default]',default=False),
+
 ]
 
 script_info['version'] = __version__
