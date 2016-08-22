@@ -1,0 +1,14 @@
+Alignemnt: 1
+Tree1: 1
+Tree2: 2
+Alignemnt cost (distance): 7
+Aligned clusters:
+1. (a, f) <-> (b, f)
+Cost: 2
+2. (d, e) <-> (a, e)
+Cost: 2
+3. (c, d, e) <-> (c, d)
+Cost: 1
+4. (b, c, d, e) <-> (b, c, d, f)
+Cost: 2
+-----------------

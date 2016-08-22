@@ -1,0 +1,1665 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0040)http://kaims.pl/~dambo/msdist/index.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Matching Split distance for unrooted binary phylogenetic trees</title>
+    
+    <link href="./Matching Split distance for unrooted binary phylogenetic trees_files/msdist.css" rel="stylesheet" type="text/css">
+     <link href="./Matching Split distance for unrooted binary phylogenetic trees_files/xls_style1.css" rel="stylesheet" type="text/css"> 
+     <link href="./Matching Split distance for unrooted binary phylogenetic trees_files/xls_style2.css" rel="stylesheet" type="text/css"> 
+</head>
+<body>
+<h1>Matching Split distance for unrooted binary phylogenetic trees</h1>
+<h2>(By Damian Bogdanowicz and Krzysztof Giaro)</h2>
+<hr>
+<h3>Supplemental Material</h3>
+<p>During the computation we analyzed 10000 pairs of trees that were chosen at random from among all possible unrooted binary trees with a particular number of leaves (n) under two the most popular models: the uniform model and the Yule model.
+In the case of the uniform model, an edge is added uniformly and randomly to any edge of the base tree. In this model, all phylogenetic trees have the same probability to be drawn. In the case of the Yule model, an edge is added uniformly and randomly to a pendant edge only, and the corresponding label is uniformly and randomly drawn as well.
+
+</p>
+<p>A preliminary experimental version of the application MSdist (which is a part of TreeCmp application) for computing the Matching Split distance between unrooted phylogenetic trees can be download  as a zip archive: <a href="http://kaims.pl/~dambo/msdist/bin/MSdist.zip">MSdist.zip</a> together with a short manual <a href="http://kaims.pl/~dambo/msdist/doc/MSdist_manual.pdf">MSdist_manual.pdf</a>.
+In order to unpack the file any software supporting zip compression, for example free software 7-zip (<a href="http://www.7-zip.org/">http://www.7-zip.org/</a>), can be used.
+MSdist is a command line tool written in pure Java. Java VM in version at least 1.5 is required to properly run MSdist.
+</p>
+
+<h2>The uniform model</h2>
+    <ul>
+        <li><h4>n=10</h4>
+        
+            <div>
+    <img class="img_border" src="./Matching Split distance for unrooted binary phylogenetic trees_files/hist_10u.jpg">
+    <img class="img_border" src="./Matching Split distance for unrooted binary phylogenetic trees_files/cdist_10u.jpg">
+    </div>
+        </li>
+    
+
+
+
+        <li><h4>n=50</h4>
+            <div>
+    <img class="img_border" src="./Matching Split distance for unrooted binary phylogenetic trees_files/hist_50u.jpg">
+    <img class="img_border" src="./Matching Split distance for unrooted binary phylogenetic trees_files/cdist_50u.jpg">
+    </div>
+        
+        </li>
+    
+    </ul> 
+
+<ul>
+        <li><h4>n=100</h4>
+            <div>
+    <img class="img_border" src="./Matching Split distance for unrooted binary phylogenetic trees_files/hist_100u.jpg">
+    <img class="img_border" src="./Matching Split distance for unrooted binary phylogenetic trees_files/cdist_100u.jpg">
+    </div>
+    
+        </li>
+    
+    </ul> 
+
+    
+     
+<ul>
+<li><h4>The detailed statistical results</h4>
+
+<div id="podsumowanie_14039" align="left" x:publishsource="Excel">
+
+<table x:str="" border="0" cellpadding="0" cellspacing="0" width="884" style="border-collapse:
+ collapse;table-layout:fixed;width:670pt">
+ <colgroup><col width="54" span="14" style="mso-width-source:userset;mso-width-alt:1974;
+ width:41pt">
+ <col width="64" span="2" style="width:48pt">
+ </colgroup><tbody><tr height="17" style="height:12.75pt">
+  <td rowspan="2" height="34" class="xl2414039" width="54" style="height:25.5pt;
+  width:41pt">n</td>
+  <td colspan="13" class="xl2414039" width="702" style="border-left:none;width:533pt">Quantile</td>
+  <td rowspan="2" class="xl2414039" width="64" style="width:48pt">avg</td>
+  <td rowspan="2" class="xl2414039" width="64" style="width:48pt">sd</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2414039" style="height:12.75pt;border-top:none;
+  border-left:none" x:num="">0.02</td>
+  <td class="xl2414039" style="border-top:none;border-left:none" x:num="">0.05</td>
+  <td class="xl2414039" style="border-top:none;border-left:none" x:num="">0.1</td>
+  <td class="xl2414039" style="border-top:none;border-left:none" x:num="">0.2</td>
+  <td class="xl2414039" style="border-top:none;border-left:none" x:num="">0.3</td>
+  <td class="xl2414039" style="border-top:none;border-left:none" x:num="">0.4</td>
+  <td class="xl2414039" style="border-top:none;border-left:none" x:num="">0.5</td>
+  <td class="xl2414039" style="border-top:none;border-left:none" x:num="">0.6</td>
+  <td class="xl2414039" style="border-top:none;border-left:none" x:num="">0.7</td>
+  <td class="xl2414039" style="border-top:none;border-left:none" x:num="">0.8</td>
+  <td class="xl2414039" style="border-top:none;border-left:none" x:num="">0.9</td>
+  <td class="xl2414039" style="border-top:none;border-left:none" x:num="">0.95</td>
+  <td class="xl2414039" style="border-top:none;border-left:none" x:num="">0.97</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2514039" style="height:12.75pt;border-top:none" x:num="">5</td>
+  <td class="xl2514039" style="border-top:none;border-left:none" x:num="">0</td>
+  <td class="xl2514039" style="border-top:none;border-left:none" x:num="">0</td>
+  <td class="xl2514039" style="border-top:none;border-left:none" x:num="">2</td>
+  <td class="xl2514039" style="border-top:none;border-left:none" x:num="">2</td>
+  <td class="xl2514039" style="border-top:none;border-left:none" x:num="">2</td>
+  <td class="xl2514039" style="border-top:none;border-left:none" x:num="">3</td>
+  <td class="xl2514039" style="border-top:none;border-left:none" x:num="">3</td>
+  <td class="xl2514039" style="border-top:none;border-left:none" x:num="">3</td>
+  <td class="xl2514039" style="border-top:none;border-left:none" x:num="">3</td>
+  <td class="xl2514039" style="border-top:none;border-left:none" x:num="">3</td>
+  <td class="xl2514039" style="border-top:none;border-left:none" x:num="">4</td>
+  <td class="xl2514039" style="border-top:none;border-left:none" x:num="">4</td>
+  <td class="xl2514039" style="border-top:none;border-left:none" x:num="">4</td>
+  <td class="xl2614039" style="border-top:none;border-left:none" x:num="2.6648999999999998">2.665</td>
+  <td class="xl2614039" style="border-top:none;border-left:none" x:num="0.94556720000000005">0.946</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2714039" style="height:12.75pt" x:num="">10</td>
+  <td class="xl2714039" style="border-left:none" x:num="">12</td>
+  <td class="xl2714039" style="border-left:none" x:num="">14</td>
+  <td class="xl2714039" style="border-left:none" x:num="">15</td>
+  <td class="xl2714039" style="border-left:none" x:num="">17</td>
+  <td class="xl2714039" style="border-left:none" x:num="">18</td>
+  <td class="xl2714039" style="border-left:none" x:num="">18</td>
+  <td class="xl2714039" style="border-left:none" x:num="">19</td>
+  <td class="xl2714039" style="border-left:none" x:num="">20</td>
+  <td class="xl2714039" style="border-left:none" x:num="">20</td>
+  <td class="xl2714039" style="border-left:none" x:num="">21</td>
+  <td class="xl2714039" style="border-left:none" x:num="">22</td>
+  <td class="xl2714039" style="border-left:none" x:num="">23</td>
+  <td class="xl2714039" style="border-left:none" x:num="">23</td>
+  <td class="xl2814039" style="border-left:none" x:num="18.779900000000001">18.780</td>
+  <td class="xl2814039" style="border-left:none" x:num="2.7668789999999999">2.767</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2714039" style="height:12.75pt" x:num="">15</td>
+  <td class="xl2714039" style="border-left:none" x:num="">34</td>
+  <td class="xl2714039" style="border-left:none" x:num="">36</td>
+  <td class="xl2714039" style="border-left:none" x:num="">38</td>
+  <td class="xl2714039" style="border-left:none" x:num="">40</td>
+  <td class="xl2714039" style="border-left:none" x:num="">42</td>
+  <td class="xl2714039" style="border-left:none" x:num="">43</td>
+  <td class="xl2714039" style="border-left:none" x:num="">45</td>
+  <td class="xl2714039" style="border-left:none" x:num="">46</td>
+  <td class="xl2714039" style="border-left:none" x:num="">47</td>
+  <td class="xl2714039" style="border-left:none" x:num="">49</td>
+  <td class="xl2714039" style="border-left:none" x:num="">51</td>
+  <td class="xl2714039" style="border-left:none" x:num="">52</td>
+  <td class="xl2714039" style="border-left:none" x:num="">53</td>
+  <td class="xl2814039" style="border-left:none" x:num="44.443100000000001">44.443</td>
+  <td class="xl2814039" style="border-left:none" x:num="5.0115340000000002">5.012</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2714039" style="height:12.75pt" x:num="">20</td>
+  <td class="xl2714039" style="border-left:none" x:num="">63</td>
+  <td class="xl2714039" style="border-left:none" x:num="">66</td>
+  <td class="xl2714039" style="border-left:none" x:num="">69</td>
+  <td class="xl2714039" style="border-left:none" x:num="">72</td>
+  <td class="xl2714039" style="border-left:none" x:num="">75</td>
+  <td class="xl2714039" style="border-left:none" x:num="">77</td>
+  <td class="xl2714039" style="border-left:none" x:num="">79</td>
+  <td class="xl2714039" style="border-left:none" x:num="">81</td>
+  <td class="xl2714039" style="border-left:none" x:num="">83</td>
+  <td class="xl2714039" style="border-left:none" x:num="">86</td>
+  <td class="xl2714039" style="border-left:none" x:num="">89</td>
+  <td class="xl2714039" style="border-left:none" x:num="">92</td>
+  <td class="xl2714039" style="border-left:none" x:num="">94</td>
+  <td class="xl2814039" style="border-left:none" x:num="78.798100000000005">78.798</td>
+  <td class="xl2814039" style="border-left:none" x:num="7.9021629999999998">7.902</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2714039" style="height:12.75pt" x:num="">25</td>
+  <td class="xl2714039" style="border-left:none" x:num="">97</td>
+  <td class="xl2714039" style="border-left:none" x:num="">102</td>
+  <td class="xl2714039" style="border-left:none" x:num="">106</td>
+  <td class="xl2714039" style="border-left:none" x:num="">110</td>
+  <td class="xl2714039" style="border-left:none" x:num="">114</td>
+  <td class="xl2714039" style="border-left:none" x:num="">117</td>
+  <td class="xl2714039" style="border-left:none" x:num="">120</td>
+  <td class="xl2714039" style="border-left:none" x:num="">122</td>
+  <td class="xl2714039" style="border-left:none" x:num="">126</td>
+  <td class="xl2714039" style="border-left:none" x:num="">129</td>
+  <td class="xl2714039" style="border-left:none" x:num="">134</td>
+  <td class="xl2714039" style="border-left:none" x:num="">139</td>
+  <td class="xl2714039" style="border-left:none" x:num="">142</td>
+  <td class="xl2814039" style="border-left:none" x:num="119.9023">119.902</td>
+  <td class="xl2814039" style="border-left:none" x:num="11.25351">11.254</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2714039" style="height:12.75pt" x:num="">30</td>
+  <td class="xl2714039" style="border-left:none" x:num="">138</td>
+  <td class="xl2714039" style="border-left:none" x:num="">144</td>
+  <td class="xl2714039" style="border-left:none" x:num="">149</td>
+  <td class="xl2714039" style="border-left:none" x:num="">155</td>
+  <td class="xl2714039" style="border-left:none" x:num="">159</td>
+  <td class="xl2714039" style="border-left:none" x:num="">163</td>
+  <td class="xl2714039" style="border-left:none" x:num="">167</td>
+  <td class="xl2714039" style="border-left:none" x:num="">171</td>
+  <td class="xl2714039" style="border-left:none" x:num="">176</td>
+  <td class="xl2714039" style="border-left:none" x:num="">181</td>
+  <td class="xl2714039" style="border-left:none" x:num="">188</td>
+  <td class="xl2714039" style="border-left:none" x:num="">194</td>
+  <td class="xl2714039" style="border-left:none" x:num="">198</td>
+  <td class="xl2814039" style="border-left:none" x:num="167.9102">167.910</td>
+  <td class="xl2814039" style="border-left:none" x:num="15.459899999999999">15.460</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2714039" style="height:12.75pt" x:num="">35</td>
+  <td class="xl2714039" style="border-left:none" x:num="">183</td>
+  <td class="xl2714039" style="border-left:none" x:num="">190</td>
+  <td class="xl2714039" style="border-left:none" x:num="">196</td>
+  <td class="xl2714039" style="border-left:none" x:num="">204</td>
+  <td class="xl2714039" style="border-left:none" x:num="">210</td>
+  <td class="xl2714039" style="border-left:none" x:num="">215</td>
+  <td class="xl2714039" style="border-left:none" x:num="">220</td>
+  <td class="xl2714039" style="border-left:none" x:num="">226</td>
+  <td class="xl2714039" style="border-left:none" x:num="">231</td>
+  <td class="xl2714039" style="border-left:none" x:num="">238</td>
+  <td class="xl2714039" style="border-left:none" x:num="">248</td>
+  <td class="xl2714039" style="border-left:none" x:num="">255</td>
+  <td class="xl2714039" style="border-left:none" x:num="">261</td>
+  <td class="xl2814039" style="border-left:none" x:num="221.2269">221.227</td>
+  <td class="xl2814039" style="border-left:none" x:num="20.029769999999999">20.030</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2714039" style="height:12.75pt" x:num="">40</td>
+  <td class="xl2714039" style="border-left:none" x:num="">233</td>
+  <td class="xl2714039" style="border-left:none" x:num="">242</td>
+  <td class="xl2714039" style="border-left:none" x:num="">249</td>
+  <td class="xl2714039" style="border-left:none" x:num="">259</td>
+  <td class="xl2714039" style="border-left:none" x:num="">266</td>
+  <td class="xl2714039" style="border-left:none" x:num="">273</td>
+  <td class="xl2714039" style="border-left:none" x:num="">279</td>
+  <td class="xl2714039" style="border-left:none" x:num="">286</td>
+  <td class="xl2714039" style="border-left:none" x:num="">293</td>
+  <td class="xl2714039" style="border-left:none" x:num="">301</td>
+  <td class="xl2714039" style="border-left:none" x:num="">313</td>
+  <td class="xl2714039" style="border-left:none" x:num="">324</td>
+  <td class="xl2714039" style="border-left:none" x:num="">332</td>
+  <td class="xl2814039" style="border-left:none" x:num="280.58499999999998">280.585</td>
+  <td class="xl2814039" style="border-left:none" x:num="25.258749999999999">25.259</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2714039" style="height:12.75pt" x:num="">45</td>
+  <td class="xl2714039" style="border-left:none" x:num="">287</td>
+  <td class="xl2714039" style="border-left:none" x:num="">297</td>
+  <td class="xl2714039" style="border-left:none" x:num="">306</td>
+  <td class="xl2714039" style="border-left:none" x:num="">318</td>
+  <td class="xl2714039" style="border-left:none" x:num="">327</td>
+  <td class="xl2714039" style="border-left:none" x:num="">335</td>
+  <td class="xl2714039" style="border-left:none" x:num="">343</td>
+  <td class="xl2714039" style="border-left:none" x:num="">351</td>
+  <td class="xl2714039" style="border-left:none" x:num="">359</td>
+  <td class="xl2714039" style="border-left:none" x:num="">369</td>
+  <td class="xl2714039" style="border-left:none" x:num="">384</td>
+  <td class="xl2714039" style="border-left:none" x:num="">398</td>
+  <td class="xl2714039" style="border-left:none" x:num="">407</td>
+  <td class="xl2814039" style="border-left:none" x:num="344.4076">344.408</td>
+  <td class="xl2814039" style="border-left:none" x:num="30.55434">30.554</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2714039" style="height:12.75pt" x:num="">50</td>
+  <td class="xl2714039" style="border-left:none" x:num="">345</td>
+  <td class="xl2714039" style="border-left:none" x:num="">357</td>
+  <td class="xl2714039" style="border-left:none" x:num="">368</td>
+  <td class="xl2714039" style="border-left:none" x:num="">382</td>
+  <td class="xl2714039" style="border-left:none" x:num="">393</td>
+  <td class="xl2714039" style="border-left:none" x:num="">402</td>
+  <td class="xl2714039" style="border-left:none" x:num="">411</td>
+  <td class="xl2714039" style="border-left:none" x:num="">421</td>
+  <td class="xl2714039" style="border-left:none" x:num="">431</td>
+  <td class="xl2714039" style="border-left:none" x:num="">444</td>
+  <td class="xl2714039" style="border-left:none" x:num="">462</td>
+  <td class="xl2714039" style="border-left:none" x:num="">479</td>
+  <td class="xl2714039" style="border-left:none" x:num="">489</td>
+  <td class="xl2814039" style="border-left:none" x:num="413.66230000000002">413.662</td>
+  <td class="xl2814039" style="border-left:none" x:num="36.970100000000002">36.970</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2714039" style="height:12.75pt" x:num="">55</td>
+  <td class="xl2714039" style="border-left:none" x:num="">406</td>
+  <td class="xl2714039" style="border-left:none" x:num="">420</td>
+  <td class="xl2714039" style="border-left:none" x:num="">433</td>
+  <td class="xl2714039" style="border-left:none" x:num="">450</td>
+  <td class="xl2714039" style="border-left:none" x:num="">463</td>
+  <td class="xl2714039" style="border-left:none" x:num="">474</td>
+  <td class="xl2714039" style="border-left:none" x:num="">485</td>
+  <td class="xl2714039" style="border-left:none" x:num="">496</td>
+  <td class="xl2714039" style="border-left:none" x:num="">509</td>
+  <td class="xl2714039" style="border-left:none" x:num="">523</td>
+  <td class="xl2714039" style="border-left:none" x:num="">543</td>
+  <td class="xl2714039" style="border-left:none" x:num="">560</td>
+  <td class="xl2714039" style="border-left:none" x:num="">573</td>
+  <td class="xl2814039" style="border-left:none" x:num="487.04689999999999">487.047</td>
+  <td class="xl2814039" style="border-left:none" x:num="43.102809999999998">43.103</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2714039" style="height:12.75pt" x:num="">60</td>
+  <td class="xl2714039" style="border-left:none" x:num="">470</td>
+  <td class="xl2714039" style="border-left:none" x:num="">487</td>
+  <td class="xl2714039" style="border-left:none" x:num="">503</td>
+  <td class="xl2714039" style="border-left:none" x:num="">522</td>
+  <td class="xl2714039" style="border-left:none" x:num="">537</td>
+  <td class="xl2714039" style="border-left:none" x:num="">550</td>
+  <td class="xl2714039" style="border-left:none" x:num="">563</td>
+  <td class="xl2714039" style="border-left:none" x:num="">576</td>
+  <td class="xl2714039" style="border-left:none" x:num="">589</td>
+  <td class="xl2714039" style="border-left:none" x:num="">607</td>
+  <td class="xl2714039" style="border-left:none" x:num="">631</td>
+  <td class="xl2714039" style="border-left:none" x:num="">652</td>
+  <td class="xl2714039" style="border-left:none" x:num="">664</td>
+  <td class="xl2814039" style="border-left:none" x:num="565.19550000000004">565.196</td>
+  <td class="xl2814039" style="border-left:none" x:num="50.315429999999999">50.315</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2714039" style="height:12.75pt" x:num="">65</td>
+  <td class="xl2714039" style="border-left:none" x:num="">542</td>
+  <td class="xl2714039" style="border-left:none" x:num="">559</td>
+  <td class="xl2714039" style="border-left:none" x:num="">577</td>
+  <td class="xl2714039" style="border-left:none" x:num="">598</td>
+  <td class="xl2714039" style="border-left:none" x:num="">615</td>
+  <td class="xl2714039" style="border-left:none" x:num="">630</td>
+  <td class="xl2714039" style="border-left:none" x:num="">644</td>
+  <td class="xl2714039" style="border-left:none" x:num="">659</td>
+  <td class="xl2714039" style="border-left:none" x:num="">676</td>
+  <td class="xl2714039" style="border-left:none" x:num="">695</td>
+  <td class="xl2714039" style="border-left:none" x:num="">724</td>
+  <td class="xl2714039" style="border-left:none" x:num="">749</td>
+  <td class="xl2714039" style="border-left:none" x:num="">764</td>
+  <td class="xl2814039" style="border-left:none" x:num="647.83910000000003">647.839</td>
+  <td class="xl2814039" style="border-left:none" x:num="57.557899999999997">57.558</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2714039" style="height:12.75pt" x:num="">70</td>
+  <td class="xl2714039" style="border-left:none" x:num="">609</td>
+  <td class="xl2714039" style="border-left:none" x:num="">631</td>
+  <td class="xl2714039" style="border-left:none" x:num="">651</td>
+  <td class="xl2714039" style="border-left:none" x:num="">676</td>
+  <td class="xl2714039" style="border-left:none" x:num="">696</td>
+  <td class="xl2714039" style="border-left:none" x:num="">713</td>
+  <td class="xl2714039" style="border-left:none" x:num="">730</td>
+  <td class="xl2714039" style="border-left:none" x:num="">747</td>
+  <td class="xl2714039" style="border-left:none" x:num="">765</td>
+  <td class="xl2714039" style="border-left:none" x:num="">787</td>
+  <td class="xl2714039" style="border-left:none" x:num="">819</td>
+  <td class="xl2714039" style="border-left:none" x:num="">848</td>
+  <td class="xl2714039" style="border-left:none" x:num="">865</td>
+  <td class="xl2814039" style="border-left:none" x:num="733.16769999999997">733.168</td>
+  <td class="xl2814039" style="border-left:none" x:num="65.80095">65.801</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2714039" style="height:12.75pt" x:num="">75</td>
+  <td class="xl2714039" style="border-left:none" x:num="">685</td>
+  <td class="xl2714039" style="border-left:none" x:num="">709</td>
+  <td class="xl2714039" style="border-left:none" x:num="">733</td>
+  <td class="xl2714039" style="border-left:none" x:num="">761</td>
+  <td class="xl2714039" style="border-left:none" x:num="">782</td>
+  <td class="xl2714039" style="border-left:none" x:num="">800</td>
+  <td class="xl2714039" style="border-left:none" x:num="">818</td>
+  <td class="xl2714039" style="border-left:none" x:num="">837</td>
+  <td class="xl2714039" style="border-left:none" x:num="">859</td>
+  <td class="xl2714039" style="border-left:none" x:num="">884</td>
+  <td class="xl2714039" style="border-left:none" x:num="">919</td>
+  <td class="xl2714039" style="border-left:none" x:num="">949</td>
+  <td class="xl2714039" style="border-left:none" x:num="">969</td>
+  <td class="xl2814039" style="border-left:none" x:num="822.93489999999997">822.935</td>
+  <td class="xl2814039" style="border-left:none" x:num="72.881460000000004">72.881</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2714039" style="height:12.75pt" x:num="">80</td>
+  <td class="xl2714039" style="border-left:none" x:num="">767</td>
+  <td class="xl2714039" style="border-left:none" x:num="">794</td>
+  <td class="xl2714039" style="border-left:none" x:num="">816</td>
+  <td class="xl2714039" style="border-left:none" x:num="">847</td>
+  <td class="xl2714039" style="border-left:none" x:num="">872</td>
+  <td class="xl2714039" style="border-left:none" x:num="">892</td>
+  <td class="xl2714039" style="border-left:none" x:num="">911</td>
+  <td class="xl2714039" style="border-left:none" x:num="">932</td>
+  <td class="xl2714039" style="border-left:none" x:num="">957</td>
+  <td class="xl2714039" style="border-left:none" x:num="">986</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1029</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1063</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1088</td>
+  <td class="xl2814039" style="border-left:none" x:num="918.04769999999996">918.048</td>
+  <td class="xl2814039" style="border-left:none" x:num="82.410830000000004">82.411</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2714039" style="height:12.75pt" x:num="">85</td>
+  <td class="xl2714039" style="border-left:none" x:num="">847</td>
+  <td class="xl2714039" style="border-left:none" x:num="">878</td>
+  <td class="xl2714039" style="border-left:none" x:num="">903</td>
+  <td class="xl2714039" style="border-left:none" x:num="">937</td>
+  <td class="xl2714039" style="border-left:none" x:num="">964</td>
+  <td class="xl2714039" style="border-left:none" x:num="">987</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1010</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1034</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1060</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1093</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1138</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1177</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1203</td>
+  <td class="xl2814039" style="border-left:none" x:num="">1016.300</td>
+  <td class="xl2814039" style="border-left:none" x:num="92.055369999999996">92.055</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2714039" style="height:12.75pt" x:num="">90</td>
+  <td class="xl2714039" style="border-left:none" x:num="">933</td>
+  <td class="xl2714039" style="border-left:none" x:num="">964</td>
+  <td class="xl2714039" style="border-left:none" x:num="">994</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1032</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1061</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1087</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1112</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1138</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1165</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1199</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1249</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1289</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1317</td>
+  <td class="xl2814039" style="border-left:none" x:num="">1117.540</td>
+  <td class="xl2814039" style="border-left:none" x:num="99.618729999999999">99.619</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2714039" style="height:12.75pt" x:num="">95</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1021</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1053</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1085</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1126</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1157</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1187</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1214</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1243</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1277</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1315</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1369</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1415</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1445</td>
+  <td class="xl2814039" style="border-left:none" x:num="1221.913">1221.913</td>
+  <td class="xl2814039" style="border-left:none" x:num="110.88160000000001">110.882</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2714039" style="height:12.75pt" x:num="">100</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1108</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1144</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1181</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1226</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1263</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1294</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1322</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1352</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1386</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1429</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1487</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1537</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1572</td>
+  <td class="xl2814039" style="border-left:none" x:num="1329.663">1329.663</td>
+  <td class="xl2814039" style="border-left:none" x:num="119.6962">119.696</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2714039" style="height:12.75pt" x:num="">105</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1201</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1242</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1281</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1330</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1369</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1401</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1434</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1467</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1503</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1549</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1612</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1665</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1705</td>
+  <td class="xl2814039" style="border-left:none" x:num="1441.605">1441.605</td>
+  <td class="xl2814039" style="border-left:none" x:num="129.92019999999999">129.920</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2714039" style="height:12.75pt" x:num="">110</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1300</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1347</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1385</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1437</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1478</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1512</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1547</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1585</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1623</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1673</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1742</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1797</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1838</td>
+  <td class="xl2814039" style="border-left:none" x:num="1557.0350000000001">1557.035</td>
+  <td class="xl2814039" style="border-left:none" x:num="139.3389">139.339</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2714039" style="height:12.75pt" x:num="">115</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1394</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1442</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1487</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1545</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1589</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1627</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1664</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1701</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1747</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1802</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1877</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1939</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1981</td>
+  <td class="xl2814039" style="border-left:none" x:num="1674.3679999999999">1674.368</td>
+  <td class="xl2814039" style="border-left:none" x:num="151.65469999999999">151.655</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2714039" style="height:12.75pt" x:num="">120</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1494</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1546</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1592</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1654</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1702</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1743</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1784</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1824</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1871</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1928</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2013</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2086</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2133</td>
+  <td class="xl2814039" style="border-left:none" x:num="1794.614">1794.614</td>
+  <td class="xl2814039" style="border-left:none" x:num="163.61619999999999">163.616</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2714039" style="height:12.75pt" x:num="">125</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1597</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1653</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1705</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1770</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1820</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1864</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1911</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1954</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2005</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2062</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2152</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2225</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2275</td>
+  <td class="xl2814039" style="border-left:none" x:num="">1920.300</td>
+  <td class="xl2814039" style="border-left:none" x:num="174.23740000000001">174.237</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2714039" style="height:12.75pt" x:num="">130</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1705</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1765</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1820</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1891</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1945</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1992</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2039</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2087</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2140</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2203</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2293</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2373</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2425</td>
+  <td class="xl2814039" style="border-left:none" x:num="2050.4870000000001">2050.487</td>
+  <td class="xl2814039" style="border-left:none" x:num="185.6379">185.638</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2714039" style="height:12.75pt" x:num="">135</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1811</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1868</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1933</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2010</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2067</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2118</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2164</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2212</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2268</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2334</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2431</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2521</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2578</td>
+  <td class="xl2814039" style="border-left:none" x:num="2175.9580000000001">2175.958</td>
+  <td class="xl2814039" style="border-left:none" x:num="196.47329999999999">196.473</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2714039" style="height:12.75pt" x:num="">140</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1924</td>
+  <td class="xl2714039" style="border-left:none" x:num="">1991</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2050</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2127</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2188</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2242</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2298</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2351</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2409</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2480</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2587</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2681</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2740</td>
+  <td class="xl2814039" style="border-left:none" x:num="2309.1930000000002">2309.193</td>
+  <td class="xl2814039" style="border-left:none" x:num="210.88310000000001">210.883</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2714039" style="height:12.75pt" x:num="">145</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2043</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2108</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2170</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2249</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2316</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2374</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2430</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2489</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2552</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2630</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2734</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2831</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2890</td>
+  <td class="xl2814039" style="border-left:none" x:num="2444.0720000000001">2444.072</td>
+  <td class="xl2814039" style="border-left:none" x:num="221.18629999999999">221.186</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2714039" style="height:12.75pt" x:num="">150</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2153</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2225</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2295</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2381</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2452</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2511</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2570</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2630</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2696</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2776</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2894</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2994</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3060</td>
+  <td class="xl2814039" style="border-left:none" x:num="2584.1010000000001">2584.101</td>
+  <td class="xl2814039" style="border-left:none" x:num="234.29220000000001">234.292</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2714039" style="height:12.75pt" x:num="">155</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2265</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2345</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2420</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2514</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2585</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2649</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2707</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2770</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2841</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2923</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3051</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3158</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3225</td>
+  <td class="xl2814039" style="border-left:none" x:num="2723.2930000000001">2723.293</td>
+  <td class="xl2814039" style="border-left:none" x:num="246.15469999999999">246.155</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2714039" style="height:12.75pt" x:num="">160</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2385</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2464</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2541</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2643</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2724</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2790</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2856</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2923</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2996</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3088</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3213</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3330</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3405</td>
+  <td class="xl2814039" style="border-left:none" x:num="2870.498">2870.498</td>
+  <td class="xl2814039" style="border-left:none" x:num="263.73880000000003">263.739</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2714039" style="height:12.75pt" x:num="">165</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2505</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2589</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2673</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2778</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2862</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2931</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2998</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3070</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3151</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3244</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3387</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3498</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3574</td>
+  <td class="xl2814039" style="border-left:none" x:num="3016.3530000000001">3016.353</td>
+  <td class="xl2814039" style="border-left:none" x:num="277.28519999999997">277.285</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2714039" style="height:12.75pt" x:num="">170</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2641</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2726</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2807</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2918</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2998</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3072</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3145</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3216</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3297</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3399</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3545</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3673</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3758</td>
+  <td class="xl2814039" style="border-left:none" x:num="">3163.300</td>
+  <td class="xl2814039" style="border-left:none" x:num="288.63630000000001">288.636</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2714039" style="height:12.75pt" x:num="">175</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2748</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2852</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2944</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3054</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3143</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3223</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3298</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3377</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3461</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3566</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3721</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3850</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3936</td>
+  <td class="xl2814039" style="border-left:none" x:num="">3317.020</td>
+  <td class="xl2814039" style="border-left:none" x:num="305.04469999999998">305.045</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2714039" style="height:12.75pt" x:num="">180</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2894</td>
+  <td class="xl2714039" style="border-left:none" x:num="">2996</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3091</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3206</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3292</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3372</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3448</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3529</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3618</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3727</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3894</td>
+  <td class="xl2714039" style="border-left:none" x:num="">4022</td>
+  <td class="xl2714039" style="border-left:none" x:num="">4111</td>
+  <td class="xl2814039" style="border-left:none" x:num="3472.9360000000001">3472.936</td>
+  <td class="xl2814039" style="border-left:none" x:num="313.90350000000001">313.904</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2714039" style="height:12.75pt" x:num="">185</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3007</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3117</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3214</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3337</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3434</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3518</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3602</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3686</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3783</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3900</td>
+  <td class="xl2714039" style="border-left:none" x:num="">4066</td>
+  <td class="xl2714039" style="border-left:none" x:num="">4210</td>
+  <td class="xl2714039" style="border-left:none" x:num="">4298</td>
+  <td class="xl2814039" style="border-left:none" x:num="3623.9389999999999">3623.939</td>
+  <td class="xl2814039" style="border-left:none" x:num="333.09030000000001">333.090</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2714039" style="height:12.75pt" x:num="">190</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3154</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3261</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3360</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3490</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3590</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3676</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3760</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3855</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3957</td>
+  <td class="xl2714039" style="border-left:none" x:num="">4070</td>
+  <td class="xl2714039" style="border-left:none" x:num="">4245</td>
+  <td class="xl2714039" style="border-left:none" x:num="">4404</td>
+  <td class="xl2714039" style="border-left:none" x:num="">4512</td>
+  <td class="xl2814039" style="border-left:none" x:num="3788.7759999999998">3788.776</td>
+  <td class="xl2814039" style="border-left:none" x:num="348.90190000000001">348.902</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2714039" style="height:12.75pt" x:num="">195</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3276</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3395</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3499</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3640</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3747</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3840</td>
+  <td class="xl2714039" style="border-left:none" x:num="">3929</td>
+  <td class="xl2714039" style="border-left:none" x:num="">4018</td>
+  <td class="xl2714039" style="border-left:none" x:num="">4124</td>
+  <td class="xl2714039" style="border-left:none" x:num="">4250</td>
+  <td class="xl2714039" style="border-left:none" x:num="">4430</td>
+  <td class="xl2714039" style="border-left:none" x:num="">4588</td>
+  <td class="xl2714039" style="border-left:none" x:num="">4694</td>
+  <td class="xl2814039" style="border-left:none" x:num="3951.299">3951.299</td>
+  <td class="xl2814039" style="border-left:none" x:num="362.68169999999998">362.682</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2914039" style="height:12.75pt" x:num="">200</td>
+  <td class="xl2914039" style="border-left:none" x:num="">3427</td>
+  <td class="xl2914039" style="border-left:none" x:num="">3534</td>
+  <td class="xl2914039" style="border-left:none" x:num="">3648</td>
+  <td class="xl2914039" style="border-left:none" x:num="">3784</td>
+  <td class="xl2914039" style="border-left:none" x:num="">3889</td>
+  <td class="xl2914039" style="border-left:none" x:num="">3991</td>
+  <td class="xl2914039" style="border-left:none" x:num="">4090</td>
+  <td class="xl2914039" style="border-left:none" x:num="">4188</td>
+  <td class="xl2914039" style="border-left:none" x:num="">4301</td>
+  <td class="xl2914039" style="border-left:none" x:num="">4429</td>
+  <td class="xl2914039" style="border-left:none" x:num="">4614</td>
+  <td class="xl2914039" style="border-left:none" x:num="">4775</td>
+  <td class="xl2914039" style="border-left:none" x:num="">4879</td>
+  <td class="xl3014039" style="border-left:none" x:num="4114.3720000000003">4114.372</td>
+  <td class="xl3014039" style="border-left:none" x:num="381.24180000000001">381.242</td>
+ </tr>
+ <!--[if supportMisalignedColumns]-->
+ <tr height="0" style="display:none">
+  <td width="64" style="width:48pt"></td>
+  <td width="64" style="width:48pt"></td>
+  <td width="64" style="width:48pt"></td>
+  <td width="64" style="width:48pt"></td>
+  <td width="64" style="width:48pt"></td>
+  <td width="64" style="width:48pt"></td>
+  <td width="64" style="width:48pt"></td>
+  <td width="64" style="width:48pt"></td>
+  <td width="64" style="width:48pt"></td>
+  <td width="64" style="width:48pt"></td>
+  <td width="64" style="width:48pt"></td>
+  <td width="64" style="width:48pt"></td>
+  <td width="64" style="width:48pt"></td>
+  <td width="64" style="width:48pt"></td>
+  <td width="64" style="width:48pt"></td>
+  <td width="64" style="width:48pt"></td>
+ </tr>
+ <!--[endif]-->
+</tbody></table>
+
+</div>
+
+
+
+</li>
+</ul>
+ <h2>The Yule model</h2>
+    <ul>
+        <li><h4>n=10</h4>
+        
+            <div>
+    <img class="img_border" src="./Matching Split distance for unrooted binary phylogenetic trees_files/hist_10y.jpg">
+    <img class="img_border" src="./Matching Split distance for unrooted binary phylogenetic trees_files/cdist_10y.jpg">
+    </div>
+        </li>
+    
+
+
+
+        <li><h4>n=50</h4>
+            <div>
+    <img class="img_border" src="./Matching Split distance for unrooted binary phylogenetic trees_files/hist_50y.jpg">
+    <img class="img_border" src="./Matching Split distance for unrooted binary phylogenetic trees_files/cdist_50y.jpg">
+    </div>
+        
+        </li>
+    
+    </ul> 
+
+<ul>
+        <li><h4>n=100</h4>
+            <div>
+    <img class="img_border" src="./Matching Split distance for unrooted binary phylogenetic trees_files/hist_100y.jpg">
+    <img class="img_border" src="./Matching Split distance for unrooted binary phylogenetic trees_files/cdist_100y.jpg">
+    </div>
+    
+        </li>
+    
+    </ul> 
+
+    
+     
+<ul>
+<li><h4>The detailed statistical results</h4>
+
+<div id="podsumowanie_17480" align="left" x:publishsource="Excel">
+
+<table x:str="" border="0" cellpadding="0" cellspacing="0" width="884" style="border-collapse:
+ collapse;table-layout:fixed;width:670pt">
+ <colgroup><col width="54" span="14" style="mso-width-source:userset;mso-width-alt:1974;
+ width:41pt">
+ <col width="64" span="2" style="width:48pt">
+ </colgroup><tbody><tr height="17" style="height:12.75pt">
+  <td rowspan="2" height="34" class="xl2417480" width="54" style="height:25.5pt;
+  width:41pt">n</td>
+  <td colspan="13" class="xl2417480" width="702" style="border-left:none;width:533pt">Quantile</td>
+  <td rowspan="2" class="xl2417480" width="64" style="width:48pt">avg</td>
+  <td rowspan="2" class="xl2417480" width="64" style="width:48pt">sd</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2417480" style="height:12.75pt;border-top:none;
+  border-left:none" x:num="">0.02</td>
+  <td class="xl2417480" style="border-top:none;border-left:none" x:num="">0.05</td>
+  <td class="xl2417480" style="border-top:none;border-left:none" x:num="">0.1</td>
+  <td class="xl2417480" style="border-top:none;border-left:none" x:num="">0.2</td>
+  <td class="xl2417480" style="border-top:none;border-left:none" x:num="">0.3</td>
+  <td class="xl2417480" style="border-top:none;border-left:none" x:num="">0.4</td>
+  <td class="xl2417480" style="border-top:none;border-left:none" x:num="">0.5</td>
+  <td class="xl2417480" style="border-top:none;border-left:none" x:num="">0.6</td>
+  <td class="xl2417480" style="border-top:none;border-left:none" x:num="">0.7</td>
+  <td class="xl2417480" style="border-top:none;border-left:none" x:num="">0.8</td>
+  <td class="xl2417480" style="border-top:none;border-left:none" x:num="">0.9</td>
+  <td class="xl2417480" style="border-top:none;border-left:none" x:num="">0.95</td>
+  <td class="xl2417480" style="border-top:none;border-left:none" x:num="">0.97</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2517480" style="height:12.75pt" x:num="">5</td>
+  <td class="xl2517480" style="border-left:none" x:num="">0</td>
+  <td class="xl2517480" style="border-left:none" x:num="">0</td>
+  <td class="xl2517480" style="border-left:none" x:num="">2</td>
+  <td class="xl2517480" style="border-left:none" x:num="">2</td>
+  <td class="xl2517480" style="border-left:none" x:num="">2</td>
+  <td class="xl2517480" style="border-left:none" x:num="">3</td>
+  <td class="xl2517480" style="border-left:none" x:num="">3</td>
+  <td class="xl2517480" style="border-left:none" x:num="">3</td>
+  <td class="xl2517480" style="border-left:none" x:num="">3</td>
+  <td class="xl2517480" style="border-left:none" x:num="">3</td>
+  <td class="xl2517480" style="border-left:none" x:num="">4</td>
+  <td class="xl2517480" style="border-left:none" x:num="">4</td>
+  <td class="xl2517480" style="border-left:none" x:num="">4</td>
+  <td class="xl2617480" style="border-left:none" x:num="2.6629999999999998">2.663</td>
+  <td class="xl2617480" style="border-left:none" x:num="0.95200929999999995">0.952</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2517480" style="height:12.75pt" x:num="">10</td>
+  <td class="xl2517480" style="border-left:none" x:num="">12</td>
+  <td class="xl2517480" style="border-left:none" x:num="">13</td>
+  <td class="xl2517480" style="border-left:none" x:num="">14</td>
+  <td class="xl2517480" style="border-left:none" x:num="">16</td>
+  <td class="xl2517480" style="border-left:none" x:num="">17</td>
+  <td class="xl2517480" style="border-left:none" x:num="">17</td>
+  <td class="xl2517480" style="border-left:none" x:num="">18</td>
+  <td class="xl2517480" style="border-left:none" x:num="">19</td>
+  <td class="xl2517480" style="border-left:none" x:num="">20</td>
+  <td class="xl2517480" style="border-left:none" x:num="">20</td>
+  <td class="xl2517480" style="border-left:none" x:num="">21</td>
+  <td class="xl2517480" style="border-left:none" x:num="">22</td>
+  <td class="xl2517480" style="border-left:none" x:num="">22</td>
+  <td class="xl2617480" style="border-left:none" x:num="17.885200000000001">17.885</td>
+  <td class="xl2617480" style="border-left:none" x:num="2.7248420000000002">2.725</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2517480" style="height:12.75pt" x:num="">15</td>
+  <td class="xl2517480" style="border-left:none" x:num="">31</td>
+  <td class="xl2517480" style="border-left:none" x:num="">33</td>
+  <td class="xl2517480" style="border-left:none" x:num="">35</td>
+  <td class="xl2517480" style="border-left:none" x:num="">37</td>
+  <td class="xl2517480" style="border-left:none" x:num="">38</td>
+  <td class="xl2517480" style="border-left:none" x:num="">39</td>
+  <td class="xl2517480" style="border-left:none" x:num="">40</td>
+  <td class="xl2517480" style="border-left:none" x:num="">42</td>
+  <td class="xl2517480" style="border-left:none" x:num="">43</td>
+  <td class="xl2517480" style="border-left:none" x:num="">44</td>
+  <td class="xl2517480" style="border-left:none" x:num="">46</td>
+  <td class="xl2517480" style="border-left:none" x:num="">47</td>
+  <td class="xl2517480" style="border-left:none" x:num="">48</td>
+  <td class="xl2617480" style="border-left:none" x:num="40.298099999999998">40.298</td>
+  <td class="xl2617480" style="border-left:none" x:num="4.2447660000000003">4.245</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2517480" style="height:12.75pt" x:num="">20</td>
+  <td class="xl2517480" style="border-left:none" x:num="">56</td>
+  <td class="xl2517480" style="border-left:none" x:num="">59</td>
+  <td class="xl2517480" style="border-left:none" x:num="">61</td>
+  <td class="xl2517480" style="border-left:none" x:num="">64</td>
+  <td class="xl2517480" style="border-left:none" x:num="">65</td>
+  <td class="xl2517480" style="border-left:none" x:num="">67</td>
+  <td class="xl2517480" style="border-left:none" x:num="">68</td>
+  <td class="xl2517480" style="border-left:none" x:num="">70</td>
+  <td class="xl2517480" style="border-left:none" x:num="">71</td>
+  <td class="xl2517480" style="border-left:none" x:num="">73</td>
+  <td class="xl2517480" style="border-left:none" x:num="">76</td>
+  <td class="xl2517480" style="border-left:none" x:num="">78</td>
+  <td class="xl2517480" style="border-left:none" x:num="">79</td>
+  <td class="xl2617480" style="border-left:none" x:num="68.330399999999997">68.330</td>
+  <td class="xl2617480" style="border-left:none" x:num="5.9113559999999996">5.911</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2517480" style="height:12.75pt" x:num="">25</td>
+  <td class="xl2517480" style="border-left:none" x:num="">84</td>
+  <td class="xl2517480" style="border-left:none" x:num="">88</td>
+  <td class="xl2517480" style="border-left:none" x:num="">91</td>
+  <td class="xl2517480" style="border-left:none" x:num="">94</td>
+  <td class="xl2517480" style="border-left:none" x:num="">97</td>
+  <td class="xl2517480" style="border-left:none" x:num="">99</td>
+  <td class="xl2517480" style="border-left:none" x:num="">100</td>
+  <td class="xl2517480" style="border-left:none" x:num="">102</td>
+  <td class="xl2517480" style="border-left:none" x:num="">104</td>
+  <td class="xl2517480" style="border-left:none" x:num="">107</td>
+  <td class="xl2517480" style="border-left:none" x:num="">110</td>
+  <td class="xl2517480" style="border-left:none" x:num="">113</td>
+  <td class="xl2517480" style="border-left:none" x:num="">115</td>
+  <td class="xl2617480" style="border-left:none" x:num="100.3892">100.389</td>
+  <td class="xl2617480" style="border-left:none" x:num="7.6142839999999996">7.614</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2517480" style="height:12.75pt" x:num="">30</td>
+  <td class="xl2517480" style="border-left:none" x:num="">117</td>
+  <td class="xl2517480" style="border-left:none" x:num="">121</td>
+  <td class="xl2517480" style="border-left:none" x:num="">124</td>
+  <td class="xl2517480" style="border-left:none" x:num="">128</td>
+  <td class="xl2517480" style="border-left:none" x:num="">131</td>
+  <td class="xl2517480" style="border-left:none" x:num="">133</td>
+  <td class="xl2517480" style="border-left:none" x:num="">136</td>
+  <td class="xl2517480" style="border-left:none" x:num="">138</td>
+  <td class="xl2517480" style="border-left:none" x:num="">141</td>
+  <td class="xl2517480" style="border-left:none" x:num="">144</td>
+  <td class="xl2517480" style="border-left:none" x:num="">148</td>
+  <td class="xl2517480" style="border-left:none" x:num="">152</td>
+  <td class="xl2517480" style="border-left:none" x:num="">154</td>
+  <td class="xl2617480" style="border-left:none" x:num="135.98519999999999">135.985</td>
+  <td class="xl2617480" style="border-left:none" x:num="9.4121860000000002">9.412</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2517480" style="height:12.75pt" x:num="">35</td>
+  <td class="xl2517480" style="border-left:none" x:num="">152</td>
+  <td class="xl2517480" style="border-left:none" x:num="">156</td>
+  <td class="xl2517480" style="border-left:none" x:num="">160</td>
+  <td class="xl2517480" style="border-left:none" x:num="">165</td>
+  <td class="xl2517480" style="border-left:none" x:num="">168</td>
+  <td class="xl2517480" style="border-left:none" x:num="">171</td>
+  <td class="xl2517480" style="border-left:none" x:num="">174</td>
+  <td class="xl2517480" style="border-left:none" x:num="">177</td>
+  <td class="xl2517480" style="border-left:none" x:num="">180</td>
+  <td class="xl2517480" style="border-left:none" x:num="">183</td>
+  <td class="xl2517480" style="border-left:none" x:num="">188</td>
+  <td class="xl2517480" style="border-left:none" x:num="">193</td>
+  <td class="xl2517480" style="border-left:none" x:num="">196</td>
+  <td class="xl2617480" style="border-left:none" x:num="174.28059999999999">174.281</td>
+  <td class="xl2617480" style="border-left:none" x:num="11.061249999999999">11.061</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2517480" style="height:12.75pt" x:num="">40</td>
+  <td class="xl2517480" style="border-left:none" x:num="">190</td>
+  <td class="xl2517480" style="border-left:none" x:num="">195</td>
+  <td class="xl2517480" style="border-left:none" x:num="">199</td>
+  <td class="xl2517480" style="border-left:none" x:num="">205</td>
+  <td class="xl2517480" style="border-left:none" x:num="">209</td>
+  <td class="xl2517480" style="border-left:none" x:num="">212</td>
+  <td class="xl2517480" style="border-left:none" x:num="">215</td>
+  <td class="xl2517480" style="border-left:none" x:num="">218</td>
+  <td class="xl2517480" style="border-left:none" x:num="">221</td>
+  <td class="xl2517480" style="border-left:none" x:num="">226</td>
+  <td class="xl2517480" style="border-left:none" x:num="">232</td>
+  <td class="xl2517480" style="border-left:none" x:num="">237</td>
+  <td class="xl2517480" style="border-left:none" x:num="">241</td>
+  <td class="xl2617480" style="border-left:none" x:num="215.38939999999999">215.389</td>
+  <td class="xl2617480" style="border-left:none" x:num="12.73343">12.733</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2517480" style="height:12.75pt" x:num="">45</td>
+  <td class="xl2517480" style="border-left:none" x:num="">230</td>
+  <td class="xl2517480" style="border-left:none" x:num="">235</td>
+  <td class="xl2517480" style="border-left:none" x:num="">241</td>
+  <td class="xl2517480" style="border-left:none" x:num="">246</td>
+  <td class="xl2517480" style="border-left:none" x:num="">251</td>
+  <td class="xl2517480" style="border-left:none" x:num="">254</td>
+  <td class="xl2517480" style="border-left:none" x:num="">258</td>
+  <td class="xl2517480" style="border-left:none" x:num="">262</td>
+  <td class="xl2517480" style="border-left:none" x:num="">266</td>
+  <td class="xl2517480" style="border-left:none" x:num="">271</td>
+  <td class="xl2517480" style="border-left:none" x:num="">277</td>
+  <td class="xl2517480" style="border-left:none" x:num="">283</td>
+  <td class="xl2517480" style="border-left:none" x:num="">286</td>
+  <td class="xl2617480" style="border-left:none" x:num="258.56060000000002">258.561</td>
+  <td class="xl2617480" style="border-left:none" x:num="14.466519999999999">14.467</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2517480" style="height:12.75pt" x:num="">50</td>
+  <td class="xl2517480" style="border-left:none" x:num="">273</td>
+  <td class="xl2517480" style="border-left:none" x:num="">279</td>
+  <td class="xl2517480" style="border-left:none" x:num="">284</td>
+  <td class="xl2517480" style="border-left:none" x:num="">290</td>
+  <td class="xl2517480" style="border-left:none" x:num="">295</td>
+  <td class="xl2517480" style="border-left:none" x:num="">300</td>
+  <td class="xl2517480" style="border-left:none" x:num="">304</td>
+  <td class="xl2517480" style="border-left:none" x:num="">308</td>
+  <td class="xl2517480" style="border-left:none" x:num="">313</td>
+  <td class="xl2517480" style="border-left:none" x:num="">318</td>
+  <td class="xl2517480" style="border-left:none" x:num="">326</td>
+  <td class="xl2517480" style="border-left:none" x:num="">332</td>
+  <td class="xl2517480" style="border-left:none" x:num="">337</td>
+  <td class="xl2617480" style="border-left:none" x:num="304.40120000000002">304.401</td>
+  <td class="xl2617480" style="border-left:none" x:num="16.43282">16.433</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2517480" style="height:12.75pt" x:num="">55</td>
+  <td class="xl2517480" style="border-left:none" x:num="">316</td>
+  <td class="xl2517480" style="border-left:none" x:num="">323</td>
+  <td class="xl2517480" style="border-left:none" x:num="">329</td>
+  <td class="xl2517480" style="border-left:none" x:num="">336</td>
+  <td class="xl2517480" style="border-left:none" x:num="">342</td>
+  <td class="xl2517480" style="border-left:none" x:num="">346</td>
+  <td class="xl2517480" style="border-left:none" x:num="">351</td>
+  <td class="xl2517480" style="border-left:none" x:num="">355</td>
+  <td class="xl2517480" style="border-left:none" x:num="">360</td>
+  <td class="xl2517480" style="border-left:none" x:num="">366</td>
+  <td class="xl2517480" style="border-left:none" x:num="">375</td>
+  <td class="xl2517480" style="border-left:none" x:num="">382</td>
+  <td class="xl2517480" style="border-left:none" x:num="">387</td>
+  <td class="xl2617480" style="border-left:none" x:num="351.44900000000001">351.449</td>
+  <td class="xl2617480" style="border-left:none" x:num="18.059100000000001">18.059</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2517480" style="height:12.75pt" x:num="">60</td>
+  <td class="xl2517480" style="border-left:none" x:num="">362</td>
+  <td class="xl2517480" style="border-left:none" x:num="">370</td>
+  <td class="xl2517480" style="border-left:none" x:num="">376</td>
+  <td class="xl2517480" style="border-left:none" x:num="">384</td>
+  <td class="xl2517480" style="border-left:none" x:num="">390</td>
+  <td class="xl2517480" style="border-left:none" x:num="">395</td>
+  <td class="xl2517480" style="border-left:none" x:num="">400</td>
+  <td class="xl2517480" style="border-left:none" x:num="">405</td>
+  <td class="xl2517480" style="border-left:none" x:num="">410</td>
+  <td class="xl2517480" style="border-left:none" x:num="">417</td>
+  <td class="xl2517480" style="border-left:none" x:num="">427</td>
+  <td class="xl2517480" style="border-left:none" x:num="">435</td>
+  <td class="xl2517480" style="border-left:none" x:num="">441</td>
+  <td class="xl2617480" style="border-left:none" x:num="400.71170000000001">400.712</td>
+  <td class="xl2617480" style="border-left:none" x:num="19.903980000000001">19.904</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2517480" style="height:12.75pt" x:num="">65</td>
+  <td class="xl2517480" style="border-left:none" x:num="">409</td>
+  <td class="xl2517480" style="border-left:none" x:num="">417</td>
+  <td class="xl2517480" style="border-left:none" x:num="">424</td>
+  <td class="xl2517480" style="border-left:none" x:num="">432</td>
+  <td class="xl2517480" style="border-left:none" x:num="">439</td>
+  <td class="xl2517480" style="border-left:none" x:num="">444</td>
+  <td class="xl2517480" style="border-left:none" x:num="">450</td>
+  <td class="xl2517480" style="border-left:none" x:num="">455</td>
+  <td class="xl2517480" style="border-left:none" x:num="">461</td>
+  <td class="xl2517480" style="border-left:none" x:num="">469</td>
+  <td class="xl2517480" style="border-left:none" x:num="">479</td>
+  <td class="xl2517480" style="border-left:none" x:num="">488</td>
+  <td class="xl2517480" style="border-left:none" x:num="">494</td>
+  <td class="xl2617480" style="border-left:none" x:num="450.5779">450.578</td>
+  <td class="xl2617480" style="border-left:none" x:num="21.771719999999998">21.772</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2517480" style="height:12.75pt" x:num="">70</td>
+  <td class="xl2517480" style="border-left:none" x:num="">458</td>
+  <td class="xl2517480" style="border-left:none" x:num="">467</td>
+  <td class="xl2517480" style="border-left:none" x:num="">474</td>
+  <td class="xl2517480" style="border-left:none" x:num="">483</td>
+  <td class="xl2517480" style="border-left:none" x:num="">490</td>
+  <td class="xl2517480" style="border-left:none" x:num="">496</td>
+  <td class="xl2517480" style="border-left:none" x:num="">502</td>
+  <td class="xl2517480" style="border-left:none" x:num="">508</td>
+  <td class="xl2517480" style="border-left:none" x:num="">514</td>
+  <td class="xl2517480" style="border-left:none" x:num="">522</td>
+  <td class="xl2517480" style="border-left:none" x:num="">534</td>
+  <td class="xl2517480" style="border-left:none" x:num="">544</td>
+  <td class="xl2517480" style="border-left:none" x:num="">550</td>
+  <td class="xl2617480" style="border-left:none" x:num="502.9572">502.957</td>
+  <td class="xl2617480" style="border-left:none" x:num="23.414210000000001">23.414</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2517480" style="height:12.75pt" x:num="">75</td>
+  <td class="xl2517480" style="border-left:none" x:num="">507</td>
+  <td class="xl2517480" style="border-left:none" x:num="">517</td>
+  <td class="xl2517480" style="border-left:none" x:num="">525</td>
+  <td class="xl2517480" style="border-left:none" x:num="">535</td>
+  <td class="xl2517480" style="border-left:none" x:num="">542</td>
+  <td class="xl2517480" style="border-left:none" x:num="">549</td>
+  <td class="xl2517480" style="border-left:none" x:num="">555</td>
+  <td class="xl2517480" style="border-left:none" x:num="">562</td>
+  <td class="xl2517480" style="border-left:none" x:num="">569</td>
+  <td class="xl2517480" style="border-left:none" x:num="">578</td>
+  <td class="xl2517480" style="border-left:none" x:num="">590</td>
+  <td class="xl2517480" style="border-left:none" x:num="">601</td>
+  <td class="xl2517480" style="border-left:none" x:num="">609</td>
+  <td class="xl2617480" style="border-left:none" x:num="556.40110000000004">556.401</td>
+  <td class="xl2617480" style="border-left:none" x:num="25.853359999999999">25.853</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2517480" style="height:12.75pt" x:num="">80</td>
+  <td class="xl2517480" style="border-left:none" x:num="">560</td>
+  <td class="xl2517480" style="border-left:none" x:num="">569</td>
+  <td class="xl2517480" style="border-left:none" x:num="">577</td>
+  <td class="xl2517480" style="border-left:none" x:num="">588</td>
+  <td class="xl2517480" style="border-left:none" x:num="">595</td>
+  <td class="xl2517480" style="border-left:none" x:num="">602</td>
+  <td class="xl2517480" style="border-left:none" x:num="">609</td>
+  <td class="xl2517480" style="border-left:none" x:num="">616</td>
+  <td class="xl2517480" style="border-left:none" x:num="">624</td>
+  <td class="xl2517480" style="border-left:none" x:num="">633</td>
+  <td class="xl2517480" style="border-left:none" x:num="">646</td>
+  <td class="xl2517480" style="border-left:none" x:num="">658</td>
+  <td class="xl2517480" style="border-left:none" x:num="">665</td>
+  <td class="xl2617480" style="border-left:none" x:num="610.73149999999998">610.732</td>
+  <td class="xl2617480" style="border-left:none" x:num="27.133970000000001">27.134</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2517480" style="height:12.75pt" x:num="">85</td>
+  <td class="xl2517480" style="border-left:none" x:num="">612</td>
+  <td class="xl2517480" style="border-left:none" x:num="">622</td>
+  <td class="xl2517480" style="border-left:none" x:num="">631</td>
+  <td class="xl2517480" style="border-left:none" x:num="">642</td>
+  <td class="xl2517480" style="border-left:none" x:num="">651</td>
+  <td class="xl2517480" style="border-left:none" x:num="">658</td>
+  <td class="xl2517480" style="border-left:none" x:num="">665</td>
+  <td class="xl2517480" style="border-left:none" x:num="">673</td>
+  <td class="xl2517480" style="border-left:none" x:num="">681</td>
+  <td class="xl2517480" style="border-left:none" x:num="">690</td>
+  <td class="xl2517480" style="border-left:none" x:num="">704</td>
+  <td class="xl2517480" style="border-left:none" x:num="">717</td>
+  <td class="xl2517480" style="border-left:none" x:num="">726</td>
+  <td class="xl2617480" style="border-left:none" x:num="666.87710000000004">666.877</td>
+  <td class="xl2617480" style="border-left:none" x:num="28.943300000000001">28.943</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2517480" style="height:12.75pt" x:num="">90</td>
+  <td class="xl2517480" style="border-left:none" x:num="">666</td>
+  <td class="xl2517480" style="border-left:none" x:num="">677</td>
+  <td class="xl2517480" style="border-left:none" x:num="">686</td>
+  <td class="xl2517480" style="border-left:none" x:num="">698</td>
+  <td class="xl2517480" style="border-left:none" x:num="">707</td>
+  <td class="xl2517480" style="border-left:none" x:num="">716</td>
+  <td class="xl2517480" style="border-left:none" x:num="">723</td>
+  <td class="xl2517480" style="border-left:none" x:num="">730</td>
+  <td class="xl2517480" style="border-left:none" x:num="">739</td>
+  <td class="xl2517480" style="border-left:none" x:num="">749</td>
+  <td class="xl2517480" style="border-left:none" x:num="">764</td>
+  <td class="xl2517480" style="border-left:none" x:num="">777</td>
+  <td class="xl2517480" style="border-left:none" x:num="">785</td>
+  <td class="xl2617480" style="border-left:none" x:num="724.16740000000004">724.167</td>
+  <td class="xl2617480" style="border-left:none" x:num="30.676729999999999">30.677</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2517480" style="height:12.75pt" x:num="">95</td>
+  <td class="xl2517480" style="border-left:none" x:num="">720</td>
+  <td class="xl2517480" style="border-left:none" x:num="">731</td>
+  <td class="xl2517480" style="border-left:none" x:num="">742</td>
+  <td class="xl2517480" style="border-left:none" x:num="">755</td>
+  <td class="xl2517480" style="border-left:none" x:num="">764</td>
+  <td class="xl2517480" style="border-left:none" x:num="">773</td>
+  <td class="xl2517480" style="border-left:none" x:num="">781</td>
+  <td class="xl2517480" style="border-left:none" x:num="">790</td>
+  <td class="xl2517480" style="border-left:none" x:num="">798</td>
+  <td class="xl2517480" style="border-left:none" x:num="">809</td>
+  <td class="xl2517480" style="border-left:none" x:num="">825</td>
+  <td class="xl2517480" style="border-left:none" x:num="">840</td>
+  <td class="xl2517480" style="border-left:none" x:num="">849</td>
+  <td class="xl2617480" style="border-left:none" x:num="782.45489999999995">782.455</td>
+  <td class="xl2617480" style="border-left:none" x:num="32.83155">32.832</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2517480" style="height:12.75pt" x:num="">100</td>
+  <td class="xl2517480" style="border-left:none" x:num="">776</td>
+  <td class="xl2517480" style="border-left:none" x:num="">787</td>
+  <td class="xl2517480" style="border-left:none" x:num="">798</td>
+  <td class="xl2517480" style="border-left:none" x:num="">813</td>
+  <td class="xl2517480" style="border-left:none" x:num="">823</td>
+  <td class="xl2517480" style="border-left:none" x:num="">831</td>
+  <td class="xl2517480" style="border-left:none" x:num="">840</td>
+  <td class="xl2517480" style="border-left:none" x:num="">848</td>
+  <td class="xl2517480" style="border-left:none" x:num="">858</td>
+  <td class="xl2517480" style="border-left:none" x:num="">869</td>
+  <td class="xl2517480" style="border-left:none" x:num="">885</td>
+  <td class="xl2517480" style="border-left:none" x:num="">901</td>
+  <td class="xl2517480" style="border-left:none" x:num="">911</td>
+  <td class="xl2617480" style="border-left:none" x:num="841.26289999999995">841.263</td>
+  <td class="xl2617480" style="border-left:none" x:num="34.4315">34.432</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2517480" style="height:12.75pt" x:num="">105</td>
+  <td class="xl2517480" style="border-left:none" x:num="">832</td>
+  <td class="xl2517480" style="border-left:none" x:num="">845</td>
+  <td class="xl2517480" style="border-left:none" x:num="">856</td>
+  <td class="xl2517480" style="border-left:none" x:num="">870</td>
+  <td class="xl2517480" style="border-left:none" x:num="">880</td>
+  <td class="xl2517480" style="border-left:none" x:num="">890</td>
+  <td class="xl2517480" style="border-left:none" x:num="">899</td>
+  <td class="xl2517480" style="border-left:none" x:num="">909</td>
+  <td class="xl2517480" style="border-left:none" x:num="">920</td>
+  <td class="xl2517480" style="border-left:none" x:num="">932</td>
+  <td class="xl2517480" style="border-left:none" x:num="">950</td>
+  <td class="xl2517480" style="border-left:none" x:num="">965</td>
+  <td class="xl2517480" style="border-left:none" x:num="">975</td>
+  <td class="xl2617480" style="border-left:none" x:num="901.42280000000005">901.423</td>
+  <td class="xl2617480" style="border-left:none" x:num="36.663629999999998">36.664</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2517480" style="height:12.75pt" x:num="">110</td>
+  <td class="xl2517480" style="border-left:none" x:num="">891</td>
+  <td class="xl2517480" style="border-left:none" x:num="">904</td>
+  <td class="xl2517480" style="border-left:none" x:num="">915</td>
+  <td class="xl2517480" style="border-left:none" x:num="">929</td>
+  <td class="xl2517480" style="border-left:none" x:num="">940</td>
+  <td class="xl2517480" style="border-left:none" x:num="">950</td>
+  <td class="xl2517480" style="border-left:none" x:num="">960</td>
+  <td class="xl2517480" style="border-left:none" x:num="">970</td>
+  <td class="xl2517480" style="border-left:none" x:num="">980</td>
+  <td class="xl2517480" style="border-left:none" x:num="">993</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1012</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1028</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1039</td>
+  <td class="xl2617480" style="border-left:none" x:num="962.03700000000003">962.037</td>
+  <td class="xl2617480" style="border-left:none" x:num="38.321530000000003">38.322</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2517480" style="height:12.75pt" x:num="">115</td>
+  <td class="xl2517480" style="border-left:none" x:num="">948</td>
+  <td class="xl2517480" style="border-left:none" x:num="">961</td>
+  <td class="xl2517480" style="border-left:none" x:num="">974</td>
+  <td class="xl2517480" style="border-left:none" x:num="">990</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1002</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1012</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1022</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1032</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1044</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1057</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1078</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1094</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1105</td>
+  <td class="xl2617480" style="border-left:none" x:num="1024.203">1024.203</td>
+  <td class="xl2617480" style="border-left:none" x:num="40.416379999999997">40.416</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2517480" style="height:12.75pt" x:num="">120</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1007</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1022</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1035</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1051</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1064</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1074</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1085</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1095</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1107</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1122</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1143</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1160</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1172</td>
+  <td class="xl2617480" style="border-left:none" x:num="1086.9939999999999">1086.994</td>
+  <td class="xl2617480" style="border-left:none" x:num="42.446739999999998">42.447</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2517480" style="height:12.75pt" x:num="">125</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1067</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1083</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1097</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1114</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1126</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1137</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1148</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1159</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1171</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1185</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1206</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1223</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1237</td>
+  <td class="xl2617480" style="border-left:none" x:num="1149.9349999999999">1149.935</td>
+  <td class="xl2617480" style="border-left:none" x:num="43.058750000000003">43.059</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2517480" style="height:12.75pt" x:num="">130</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1129</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1145</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1159</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1176</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1189</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1201</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1212</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1225</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1237</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1254</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1276</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1295</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1308</td>
+  <td class="xl2617480" style="border-left:none" x:num="">1215.330</td>
+  <td class="xl2617480" style="border-left:none" x:num="46.01614">46.016</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2517480" style="height:12.75pt" x:num="">135</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1190</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1206</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1220</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1238</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1253</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1264</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1276</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1288</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1301</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1317</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1340</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1361</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1374</td>
+  <td class="xl2617480" style="border-left:none" x:num="1278.579">1278.579</td>
+  <td class="xl2617480" style="border-left:none" x:num="47.464709999999997">47.465</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2517480" style="height:12.75pt" x:num="">140</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1250</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1269</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1284</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1304</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1318</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1331</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1343</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1356</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1370</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1387</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1409</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1429</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1443</td>
+  <td class="xl2617480" style="border-left:none" x:num="1345.578">1345.578</td>
+  <td class="xl2617480" style="border-left:none" x:num="49.547960000000003">49.548</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2517480" style="height:12.75pt" x:num="">145</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1316</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1333</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1349</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1369</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1384</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1397</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1410</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1423</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1437</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1454</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1479</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1501</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1516</td>
+  <td class="xl2617480" style="border-left:none" x:num="1412.441">1412.441</td>
+  <td class="xl2617480" style="border-left:none" x:num="51.273009999999999">51.273</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2517480" style="height:12.75pt" x:num="">150</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1380</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1399</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1414</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1435</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1450</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1464</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1477</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1490</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1505</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1523</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1549</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1572</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1588</td>
+  <td class="xl2617480" style="border-left:none" x:num="1479.903">1479.903</td>
+  <td class="xl2617480" style="border-left:none" x:num="53.139029999999998">53.139</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2517480" style="height:12.75pt" x:num="">155</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1443</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1461</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1479</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1500</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1516</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1529</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1543</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1557</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1572</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1591</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1620</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1643</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1658</td>
+  <td class="xl2617480" style="border-left:none" x:num="1546.6030000000001">1546.603</td>
+  <td class="xl2617480" style="border-left:none" x:num="55.315010000000001">55.315</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2517480" style="height:12.75pt" x:num="">160</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1507</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1526</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1545</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1567</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1584</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1598</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1611</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1625</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1641</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1662</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1690</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1713</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1731</td>
+  <td class="xl2617480" style="border-left:none" x:num="1614.8520000000001">1614.852</td>
+  <td class="xl2617480" style="border-left:none" x:num="57.003889999999998">57.004</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2517480" style="height:12.75pt" x:num="">165</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1573</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1592</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1612</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1635</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1653</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1668</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1681</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1696</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1712</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1733</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1762</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1788</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1806</td>
+  <td class="xl2617480" style="border-left:none" x:num="1684.8230000000001">1684.823</td>
+  <td class="xl2617480" style="border-left:none" x:num="59.34787">59.348</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2517480" style="height:12.75pt" x:num="">170</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1637</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1658</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1678</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1701</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1719</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1735</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1751</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1767</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1784</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1806</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1835</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1860</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1877</td>
+  <td class="xl2617480" style="border-left:none" x:num="1754.2059999999999">1754.206</td>
+  <td class="xl2617480" style="border-left:none" x:num="61.8673">61.867</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2517480" style="height:12.75pt" x:num="">175</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1706</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1727</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1747</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1772</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1791</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1807</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1823</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1839</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1856</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1879</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1909</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1936</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1955</td>
+  <td class="xl2617480" style="border-left:none" x:num="">1826.160</td>
+  <td class="xl2617480" style="border-left:none" x:num="63.832360000000001">63.832</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2517480" style="height:12.75pt" x:num="">180</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1772</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1792</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1813</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1839</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1859</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1875</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1892</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1909</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1927</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1948</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1981</td>
+  <td class="xl2517480" style="border-left:none" x:num="">2009</td>
+  <td class="xl2517480" style="border-left:none" x:num="">2028</td>
+  <td class="xl2617480" style="border-left:none" x:num="">1895.470</td>
+  <td class="xl2617480" style="border-left:none" x:num="66.022800000000004">66.023</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2517480" style="height:12.75pt" x:num="">185</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1842</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1864</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1884</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1910</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1929</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1945</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1962</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1980</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1998</td>
+  <td class="xl2517480" style="border-left:none" x:num="">2020</td>
+  <td class="xl2517480" style="border-left:none" x:num="">2052</td>
+  <td class="xl2517480" style="border-left:none" x:num="">2079</td>
+  <td class="xl2517480" style="border-left:none" x:num="">2097</td>
+  <td class="xl2617480" style="border-left:none" x:num="1965.972">1965.972</td>
+  <td class="xl2617480" style="border-left:none" x:num="66.328810000000004">66.329</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2517480" style="height:12.75pt" x:num="">190</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1909</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1931</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1953</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1981</td>
+  <td class="xl2517480" style="border-left:none" x:num="">2000</td>
+  <td class="xl2517480" style="border-left:none" x:num="">2018</td>
+  <td class="xl2517480" style="border-left:none" x:num="">2035</td>
+  <td class="xl2517480" style="border-left:none" x:num="">2053</td>
+  <td class="xl2517480" style="border-left:none" x:num="">2073</td>
+  <td class="xl2517480" style="border-left:none" x:num="">2096</td>
+  <td class="xl2517480" style="border-left:none" x:num="">2130</td>
+  <td class="xl2517480" style="border-left:none" x:num="">2160</td>
+  <td class="xl2517480" style="border-left:none" x:num="">2180</td>
+  <td class="xl2617480" style="border-left:none" x:num="2039.212">2039.212</td>
+  <td class="xl2617480" style="border-left:none" x:num="69.579800000000006">69.580</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2517480" style="height:12.75pt" x:num="">195</td>
+  <td class="xl2517480" style="border-left:none" x:num="">1978</td>
+  <td class="xl2517480" style="border-left:none" x:num="">2002</td>
+  <td class="xl2517480" style="border-left:none" x:num="">2023</td>
+  <td class="xl2517480" style="border-left:none" x:num="">2051</td>
+  <td class="xl2517480" style="border-left:none" x:num="">2071</td>
+  <td class="xl2517480" style="border-left:none" x:num="">2090</td>
+  <td class="xl2517480" style="border-left:none" x:num="">2107</td>
+  <td class="xl2517480" style="border-left:none" x:num="">2126</td>
+  <td class="xl2517480" style="border-left:none" x:num="">2146</td>
+  <td class="xl2517480" style="border-left:none" x:num="">2169</td>
+  <td class="xl2517480" style="border-left:none" x:num="">2204</td>
+  <td class="xl2517480" style="border-left:none" x:num="">2233</td>
+  <td class="xl2517480" style="border-left:none" x:num="">2253</td>
+  <td class="xl2617480" style="border-left:none" x:num="2111.1019999999999">2111.102</td>
+  <td class="xl2617480" style="border-left:none" x:num="70.547370000000001">70.547</td>
+ </tr>
+ <tr height="17" style="height:12.75pt">
+  <td height="17" class="xl2717480" style="height:12.75pt" x:num="">200</td>
+  <td class="xl2717480" style="border-left:none" x:num="">2048</td>
+  <td class="xl2717480" style="border-left:none" x:num="">2072</td>
+  <td class="xl2717480" style="border-left:none" x:num="">2095</td>
+  <td class="xl2717480" style="border-left:none" x:num="">2122</td>
+  <td class="xl2717480" style="border-left:none" x:num="">2143</td>
+  <td class="xl2717480" style="border-left:none" x:num="">2162</td>
+  <td class="xl2717480" style="border-left:none" x:num="">2180</td>
+  <td class="xl2717480" style="border-left:none" x:num="">2198</td>
+  <td class="xl2717480" style="border-left:none" x:num="">2218</td>
+  <td class="xl2717480" style="border-left:none" x:num="">2243</td>
+  <td class="xl2717480" style="border-left:none" x:num="">2279</td>
+  <td class="xl2717480" style="border-left:none" x:num="">2310</td>
+  <td class="xl2717480" style="border-left:none" x:num="">2332</td>
+  <td class="xl2817480" style="border-left:none" x:num="2184.096">2184.096</td>
+  <td class="xl2817480" style="border-left:none" x:num="72.650009999999995">72.650</td>
+ </tr>
+ <!--[if supportMisalignedColumns]-->
+ <tr height="0" style="display:none">
+  <td width="64" style="width:48pt"></td>
+  <td width="64" style="width:48pt"></td>
+  <td width="64" style="width:48pt"></td>
+  <td width="64" style="width:48pt"></td>
+  <td width="64" style="width:48pt"></td>
+  <td width="64" style="width:48pt"></td>
+  <td width="64" style="width:48pt"></td>
+  <td width="64" style="width:48pt"></td>
+  <td width="64" style="width:48pt"></td>
+  <td width="64" style="width:48pt"></td>
+  <td width="64" style="width:48pt"></td>
+  <td width="64" style="width:48pt"></td>
+  <td width="64" style="width:48pt"></td>
+  <td width="64" style="width:48pt"></td>
+  <td width="64" style="width:48pt"></td>
+  <td width="64" style="width:48pt"></td>
+ </tr>
+ <!--[endif]-->
+</tbody></table>
+
+</div>
+</li>
+</ul>
+
+<h2>The average value of the MS distance for 10000 pairs of trees under the two considered models</h2>
+
+    <div>
+    <img class="img_border" src="./Matching Split distance for unrooted binary phylogenetic trees_files/avg_5_200uy.jpg">
+</div> 
+<p>The solid lines show the average values, dashed lines represent double standard deviation intervals (avg�2*sd).</p>
+ 
+
+
+</body></html>

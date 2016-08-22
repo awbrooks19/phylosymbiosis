@@ -1,0 +1,14 @@
+1) 
+java -jar TreeCmp.jar -w 2 -d ms -i testBSP.newick -o testBSP.newick_w_2.out -I
+
+2) 
+java -jar TreeCmp.jar -w 3 -d ms -i testBSP.newick -o testBSP.newick_w_3.out -I
+
+3)
+java -jar TreeCmp.jar -s -d ms rf -i testBSP.newick -o testBSP.newick_s.out -N
+
+4)
+java -jar TreeCmp.jar -m -d ms rf qt -i testBSP.newick -o testBSP.newick_m.out
+
+5)
+java -jar TreeCmp.jar -m -d ms rf qt pd -i testBSP.nexus -o testBSP.nexus_m.out

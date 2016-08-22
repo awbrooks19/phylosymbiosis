@@ -1,0 +1,2 @@
+Tree	MatchingSplit	MatchingSplit_toYuleAvg	MatchingSplit_toUnifAvg
+1	4.0000	0.7960	0.7814

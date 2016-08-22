@@ -1,0 +1,8 @@
+1)
+java -jar TreeCmp.jar -w 2 -d ms -i plain.trees -o plain.trees.w_2.out
+
+2)
+java -jar TreeCmp.jar -s -d mc rc tt -i plain.trees -o plain.trees.s.out
+
+3)
+java -jar TreeCmp.jar -m -d qt -i plain.trees -o plain.trees.m.out 

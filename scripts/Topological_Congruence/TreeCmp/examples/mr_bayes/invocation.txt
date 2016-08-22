@@ -1,0 +1,8 @@
+1)
+java -jar TreeCmp.jar -w 5 -d rf -i ALIGN1.nex -o ALIGN1.nex.w_5.out
+
+2)
+java -jar TreeCmp.jar -s -d tt ns mc rc -i ALIGN1.nex -o ALIGN1.nex_s.out
+
+3)
+java -jar TreeCmp.jar -m -d ms pd -i ALIGN1.nex -o ALIGN1.nex_m.out
