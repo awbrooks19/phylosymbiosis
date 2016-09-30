@@ -1,0 +1,2 @@
+1) 
+java -jar TreeCmp.jar -w 2 -d mc -i align.trees -o align.trees.out -I -A

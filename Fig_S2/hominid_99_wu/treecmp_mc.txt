@@ -1,0 +1,2 @@
+Tree	MatchingCluster	MatchingCluster_toYuleAvg	MatchingCluster_toUnifAvg
+1	8.0000	0.6340	0.6315

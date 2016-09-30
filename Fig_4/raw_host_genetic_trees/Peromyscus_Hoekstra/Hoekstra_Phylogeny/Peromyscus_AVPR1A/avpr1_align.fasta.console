@@ -1,0 +1,1628 @@
+----------------------------- jModeltest 0.1.1 -----------------------------
+(c) 2008 David Posada, Department of Biochemistry, Genetics and Immunology
+University of Vigo, 36310 Vigo, Spain. e-mail: dposada@uvigo.es
+--------------------------------------------------------------------------
+Tue Mar 22 12:56:12 CDT 2016  (Mac OS X 10.11.2, arch: x86_64)
+
+
+******************************* NOTICE ************************************
+This program may contain errors. Please inspect the results carefully.
+***************************************************************************
+
+Reading data file "avpr1_align.fasta"... OK.
+  number of sequences: 14
+  number of sites: 1266
+
+
+---------------------------------------------------------------
+*                                                             *
+*        COMPUTATION OF LIKELIHOOD SCORES WITH PHYML          *
+*                                                             *
+---------------------------------------------------------------
+
+Settings:
+ Phyml version = 3.0
+ Candidate models = 88
+  number of substitution schemes = 11
+  including models with equal/unequal base frequencies (+F)
+  including models with/without a proportion of invariable sites (+I)
+  including models with/without rate variation among sites (+G) (nCat = 4)
+ Optimized free parameters (K) = substitution parameters + 25 branch lengths + topology
+ Base tree for likelihood calculations = ML tree
+
+Maximum likelihod estimation for the JC model.
+  ML optimized tree topology
+   Model = JC
+   partition = 000000
+   -lnL = 2483.6399
+   K = 26
+  Computation time = 00h:00:00:03  (00h:00:00:03)
+
+Maximum likelihod estimation for the JC+I model.
+  ML optimized tree topology
+   Model = JC+I
+   partition = 000000
+   -lnL = 2487.7488
+   K = 27
+   p-inv = 0.8860
+  Computation time = 00h:00:00:04  (00h:00:00:07)
+
+Maximum likelihod estimation for the JC+G model.
+  ML optimized tree topology
+   Model = JC+G
+   partition = 000000
+   -lnL = 2464.1478
+   K = 27
+   gamma shape = 0.0310
+  Computation time = 00h:00:00:06  (00h:00:01:03)
+
+Maximum likelihod estimation for the JC+I+G model.
+  ML optimized tree topology
+   Model = JC+I+G
+   partition = 000000
+   -lnL = 2468.4056
+   K = 28
+   p-inv = 0.8490
+   gamma shape = 98.8550
+  Computation time = 00h:00:02:07  (00h:00:04:00)
+
+Maximum likelihod estimation for the F81 model.
+  ML optimized tree topology
+   Model = F81
+   partition = 000000
+   -lnL = 2465.1031
+   K = 29
+   freqA = 0.2036 
+   freqC = 0.3099 
+   freqG = 0.2663 
+   freqT = 0.2201 
+  Computation time = 00h:00:00:03  (00h:00:04:03)
+
+Maximum likelihod estimation for the F81+I model.
+  ML optimized tree topology
+   Model = F81+I
+   partition = 000000
+   -lnL = 2464.5935
+   K = 30
+   freqA = 0.2022 
+   freqC = 0.3125 
+   freqG = 0.2658 
+   freqT = 0.2195 
+   p-inv = 0.8830
+  Computation time = 00h:00:00:07  (00h:00:05:00)
+
+Maximum likelihod estimation for the F81+G model.
+  ML optimized tree topology
+   Model = F81+G
+   partition = 000000
+   -lnL = 2445.4606
+   K = 30
+   freqA = 0.2034 
+   freqC = 0.3100 
+   freqG = 0.2667 
+   freqT = 0.2200 
+   gamma shape = 0.0310
+  Computation time = 00h:00:00:07  (00h:00:05:06)
+
+Maximum likelihod estimation for the F81+I+G model.
+  ML optimized tree topology
+   Model = F81+I+G
+   partition = 000000
+   -lnL = 2464.3228
+   K = 31
+   freqA = 0.2024 
+   freqC = 0.3125 
+   freqG = 0.2655 
+   freqT = 0.2197 
+   p-inv = 0.8210
+   gamma shape = 1.0120
+  Computation time = 00h:00:00:09  (00h:00:06:05)
+
+Maximum likelihod estimation for the K80 model.
+  ML optimized tree topology
+   Model = K80
+   partition = 010010
+   -lnL = 2447.0426
+   K = 27
+   kappa = 6.2108 (ti/tv = 3.1054)
+  Computation time = 00h:00:00:02  (00h:00:06:08)
+
+Maximum likelihod estimation for the K80+I model.
+  ML optimized tree topology
+   Model = K80+I
+   partition = 010010
+   -lnL = 2437.2403
+   K = 28
+   kappa = 6.6882 (ti/tv = 3.3441)
+   p-inv = 0.8830
+  Computation time = 00h:00:00:07  (00h:00:07:04)
+
+Maximum likelihod estimation for the K80+G model.
+  ML optimized tree topology
+   Model = K80+G
+   partition = 010010
+   -lnL = 2427.1491
+   K = 28
+   kappa = 6.3613 (ti/tv = 3.1806)
+   gamma shape = 0.0310
+  Computation time = 00h:00:00:07  (00h:00:08:01)
+
+Maximum likelihod estimation for the K80+I+G model.
+  ML optimized tree topology
+   Model = K80+I+G
+   partition = 010010
+   -lnL = 2439.8459
+   K = 29
+   kappa = 6.9024 (ti/tv = 3.4512)
+   p-inv = 0.8780
+   gamma shape = 92.3880
+  Computation time = 00h:00:02:06  (00h:00:10:07)
+
+Maximum likelihod estimation for the HKY model.
+  ML optimized tree topology
+   Model = HKY
+   partition = 010010
+   -lnL = 2427.9940
+   K = 30
+   freqA = 0.2033 
+   freqC = 0.3097 
+   freqG = 0.2683 
+   freqT = 0.2187 
+   kappa = 6.3443 (ti/tv = 3.1130)
+  Computation time = 00h:00:00:03  (00h:00:11:01)
+
+Maximum likelihod estimation for the HKY+I model.
+  ML optimized tree topology
+   Model = HKY+I
+   partition = 010010
+   -lnL = 2424.2906
+   K = 31
+   freqA = 0.2009 
+   freqC = 0.3140 
+   freqG = 0.2686 
+   freqT = 0.2165 
+   kappa = 6.7952 (ti/tv = 3.3269)
+   p-inv = 0.8880
+  Computation time = 00h:00:00:09  (00h:00:11:09)
+
+Maximum likelihod estimation for the HKY+G model.
+  ML optimized tree topology
+   Model = HKY+G
+   partition = 010010
+   -lnL = 2407.5916
+   K = 31
+   freqA = 0.2023 
+   freqC = 0.3106 
+   freqG = 0.2689 
+   freqT = 0.2183 
+   kappa = 6.5699 (ti/tv = 3.2215)
+   gamma shape = 0.0310
+  Computation time = 00h:00:00:09  (00h:00:12:08)
+
+Maximum likelihod estimation for the HKY+I+G model.
+  ML optimized tree topology
+   Model = HKY+I+G
+   partition = 010010
+   -lnL = 2418.8199
+   K = 32
+   freqA = 0.2011 
+   freqC = 0.3138 
+   freqG = 0.2683 
+   freqT = 0.2168 
+   kappa = 7.2458 (ti/tv = 3.5488)
+   p-inv = 0.8810
+   gamma shape = 95.0680
+  Computation time = 00h:00:04:00  (00h:00:16:09)
+
+Maximum likelihod estimation for the TrNef model.
+  ML optimized tree topology
+   Model = TrNef
+   partition = 010020
+   -lnL = 2447.0170
+   K = 28
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  6.0381
+   R(c) [AT] =  1.0000
+   R(d) [CG] =  1.0000
+   R(e) [CT] =  6.3660
+   R(f) [GT] =  1.0000
+  Computation time = 00h:00:00:03  (00h:00:17:01)
+
+Maximum likelihod estimation for the TrNef+I model.
+  ML optimized tree topology
+   Model = TrNef+I
+   partition = 010020
+   -lnL = 2436.7113
+   K = 29
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  5.7674
+   R(c) [AT] =  1.0000
+   R(d) [CG] =  1.0000
+   R(e) [CT] =  7.6498
+   R(f) [GT] =  1.0000
+   p-inv = 0.8840
+  Computation time = 00h:00:00:06  (00h:00:17:07)
+
+Maximum likelihod estimation for the TrNef+G model.
+  ML optimized tree topology
+   Model = TrNef+G
+   partition = 010020
+   -lnL = 2427.0890
+   K = 29
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  6.0693
+   R(c) [AT] =  1.0000
+   R(d) [CG] =  1.0000
+   R(e) [CT] =  6.6326
+   R(f) [GT] =  1.0000
+   gamma shape = 0.0310
+  Computation time = 00h:00:00:06  (00h:00:18:03)
+
+Maximum likelihod estimation for the TrNef+I+G model.
+  ML optimized tree topology
+   Model = TrNef+I+G
+   partition = 010020
+   -lnL = 2432.6280
+   K = 30
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  6.0956
+   R(c) [AT] =  1.0000
+   R(d) [CG] =  1.0000
+   R(e) [CT] =  6.4017
+   R(f) [GT] =  1.0000
+   p-inv = 0.8560
+   gamma shape = 97.7840
+  Computation time = 00h:00:01:02  (00h:00:19:05)
+
+Maximum likelihod estimation for the TrN model.
+  ML optimized tree topology
+   Model = TrN
+   partition = 010020
+   -lnL = 2427.9692
+   K = 31
+   freqA = 0.2029 
+   freqC = 0.3101 
+   freqG = 0.2680 
+   freqT = 0.2191 
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  6.5308
+   R(c) [AT] =  1.0000
+   R(d) [CG] =  1.0000
+   R(e) [CT] =  6.1902
+   R(f) [GT] =  1.0000
+  Computation time = 00h:00:00:03  (00h:00:19:08)
+
+Maximum likelihod estimation for the TrN+I model.
+  ML optimized tree topology
+   Model = TrN+I
+   partition = 010020
+   -lnL = 2424.2602
+   K = 32
+   freqA = 0.2011 
+   freqC = 0.3138 
+   freqG = 0.2690 
+   freqT = 0.2161 
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  6.5540
+   R(c) [AT] =  1.0000
+   R(d) [CG] =  1.0000
+   R(e) [CT] =  7.0250
+   R(f) [GT] =  1.0000
+   p-inv = 0.8880
+  Computation time = 00h:00:00:06  (00h:00:20:03)
+
+Maximum likelihod estimation for the TrN+G model.
+  ML optimized tree topology
+   Model = TrN+G
+   partition = 010020
+   -lnL = 2407.5871
+   K = 32
+   freqA = 0.2021 
+   freqC = 0.3108 
+   freqG = 0.2688 
+   freqT = 0.2183 
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  6.6588
+   R(c) [AT] =  1.0000
+   R(d) [CG] =  1.0000
+   R(e) [CT] =  6.4943
+   R(f) [GT] =  1.0000
+   gamma shape = 0.0310
+  Computation time = 00h:00:00:09  (00h:00:21:02)
+
+Maximum likelihod estimation for the TrN+I+G model.
+  ML optimized tree topology
+   Model = TrN+I+G
+   partition = 010020
+   -lnL = 2412.0708
+   K = 33
+   freqA = 0.2016 
+   freqC = 0.3129 
+   freqG = 0.2690 
+   freqT = 0.2165 
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  6.7785
+   R(c) [AT] =  1.0000
+   R(d) [CG] =  1.0000
+   R(e) [CT] =  6.3093
+   R(f) [GT] =  1.0000
+   p-inv = 0.8580
+   gamma shape = 96.6920
+  Computation time = 00h:00:02:06  (00h:00:23:08)
+
+Maximum likelihod estimation for the TPM1 model.
+  ML optimized tree topology
+   Model = TPM1
+   partition = 012210
+   -lnL = 2446.9581
+   K = 28
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  6.7858
+   R(c) [AT] =  1.1849
+   R(d) [CG] =  1.1849
+   R(e) [CT] =  6.7858
+   R(f) [GT] =  1.0000
+  Computation time = 00h:00:00:03  (00h:00:24:01)
+
+Maximum likelihod estimation for the TPM1+I model.
+  ML optimized tree topology
+   Model = TPM1+I
+   partition = 012210
+   -lnL = 2437.2366
+   K = 29
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  6.8259
+   R(c) [AT] =  1.0405
+   R(d) [CG] =  1.0405
+   R(e) [CT] =  6.8259
+   R(f) [GT] =  1.0000
+   p-inv = 0.8830
+  Computation time = 00h:00:00:06  (00h:00:24:08)
+
+Maximum likelihod estimation for the TPM1+G model.
+  ML optimized tree topology
+   Model = TPM1+G
+   partition = 012210
+   -lnL = 2427.0614
+   K = 29
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  6.9844
+   R(c) [AT] =  1.1955
+   R(d) [CG] =  1.1955
+   R(e) [CT] =  6.9844
+   R(f) [GT] =  1.0000
+   gamma shape = 0.0310
+  Computation time = 00h:00:00:06  (00h:00:25:04)
+
+Maximum likelihod estimation for the TPM1+I+G model.
+  ML optimized tree topology
+   Model = TPM1+I+G
+   partition = 012210
+   -lnL = 2439.8346
+   K = 30
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  6.6879
+   R(c) [AT] =  0.9379
+   R(d) [CG] =  0.9379
+   R(e) [CT] =  6.6879
+   R(f) [GT] =  1.0000
+   p-inv = 0.8790
+   gamma shape = 94.2280
+  Computation time = 00h:00:02:09  (00h:00:28:03)
+
+Maximum likelihod estimation for the TPM1uf model.
+  ML optimized tree topology
+   Model = TPM1uf
+   partition = 012210
+   -lnL = 2427.9532
+   K = 31
+   freqA = 0.2032 
+   freqC = 0.3097 
+   freqG = 0.2683 
+   freqT = 0.2187 
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  6.7514
+   R(c) [AT] =  1.1252
+   R(d) [CG] =  1.1252
+   R(e) [CT] =  6.7514
+   R(f) [GT] =  1.0000
+  Computation time = 00h:00:00:05  (00h:00:28:08)
+
+Maximum likelihod estimation for the TPM1uf+I model.
+  ML optimized tree topology
+   Model = TPM1uf+I
+   partition = 012210
+   -lnL = 2424.2228
+   K = 32
+   freqA = 0.2006 
+   freqC = 0.3143 
+   freqG = 0.2687 
+   freqT = 0.2164 
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  6.2671
+   R(c) [AT] =  0.8515
+   R(d) [CG] =  0.8515
+   R(e) [CT] =  6.2671
+   R(f) [GT] =  1.0000
+   p-inv = 0.8880
+  Computation time = 00h:00:00:06  (00h:00:29:03)
+
+Maximum likelihod estimation for the TPM1uf+G model.
+  ML optimized tree topology
+   Model = TPM1uf+G
+   partition = 012210
+   -lnL = 2407.5594
+   K = 32
+   freqA = 0.2024 
+   freqC = 0.3105 
+   freqG = 0.2689 
+   freqT = 0.2182 
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  6.9584
+   R(c) [AT] =  1.1142
+   R(d) [CG] =  1.1142
+   R(e) [CT] =  6.9584
+   R(f) [GT] =  1.0000
+   gamma shape = 0.0310
+  Computation time = 00h:00:00:08  (00h:00:30:01)
+
+Maximum likelihod estimation for the TPM1uf+I+G model.
+  ML optimized tree topology
+   Model = TPM1uf+I+G
+   partition = 012210
+   -lnL = 2418.7533
+   K = 33
+   freqA = 0.2011 
+   freqC = 0.3138 
+   freqG = 0.2683 
+   freqT = 0.2168 
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  6.6744
+   R(c) [AT] =  0.8503
+   R(d) [CG] =  0.8503
+   R(e) [CT] =  6.6744
+   R(f) [GT] =  1.0000
+   p-inv = 0.8810
+   gamma shape = 94.9890
+  Computation time = 00h:00:03:06  (00h:00:33:08)
+
+Maximum likelihod estimation for the TPM2 model.
+  ML optimized tree topology
+   Model = TPM2
+   partition = 010212
+   -lnL = 2446.6570
+   K = 28
+   R(a) [AC] =  0.6920
+   R(b) [AG] =  5.3234
+   R(c) [AT] =  0.6920
+   R(d) [CG] =  1.0000
+   R(e) [CT] =  5.3234
+   R(f) [GT] =  1.0000
+  Computation time = 00h:00:00:02  (00h:00:34:00)
+
+Maximum likelihod estimation for the TPM2+I model.
+  ML optimized tree topology
+   Model = TPM2+I
+   partition = 010212
+   -lnL = 2437.0954
+   K = 29
+   R(a) [AC] =  0.7912
+   R(b) [AG] =  6.0670
+   R(c) [AT] =  0.7912
+   R(d) [CG] =  1.0000
+   R(e) [CT] =  6.0670
+   R(f) [GT] =  1.0000
+   p-inv = 0.8820
+  Computation time = 00h:00:00:06  (00h:00:34:06)
+
+Maximum likelihod estimation for the TPM2+G model.
+  ML optimized tree topology
+   Model = TPM2+G
+   partition = 010212
+   -lnL = 2426.8329
+   K = 29
+   R(a) [AC] =  0.7096
+   R(b) [AG] =  5.5159
+   R(c) [AT] =  0.7096
+   R(d) [CG] =  1.0000
+   R(e) [CT] =  5.5159
+   R(f) [GT] =  1.0000
+   gamma shape = 0.0310
+  Computation time = 00h:00:00:06  (00h:00:35:03)
+
+Maximum likelihod estimation for the TPM2+I+G model.
+  ML optimized tree topology
+   Model = TPM2+I+G
+   partition = 010212
+   -lnL = 2439.7802
+   K = 30
+   R(a) [AC] =  0.8532
+   R(b) [AG] =  6.4481
+   R(c) [AT] =  0.8532
+   R(d) [CG] =  1.0000
+   R(e) [CT] =  6.4481
+   R(f) [GT] =  1.0000
+   p-inv = 0.8780
+   gamma shape = 94.2880
+  Computation time = 00h:00:02:07  (00h:00:38:00)
+
+Maximum likelihod estimation for the TPM2uf model.
+  ML optimized tree topology
+   Model = TPM2uf
+   partition = 010212
+   -lnL = 2427.8570
+   K = 31
+   freqA = 0.2037 
+   freqC = 0.3098 
+   freqG = 0.2678 
+   freqT = 0.2187 
+   R(a) [AC] =  0.8015
+   R(b) [AG] =  5.8055
+   R(c) [AT] =  0.8015
+   R(d) [CG] =  1.0000
+   R(e) [CT] =  5.8055
+   R(f) [GT] =  1.0000
+  Computation time = 00h:00:00:03  (00h:00:38:03)
+
+Maximum likelihod estimation for the TPM2uf+I model.
+  ML optimized tree topology
+   Model = TPM2uf+I
+   partition = 010212
+   -lnL = 2424.2598
+   K = 32
+   freqA = 0.2004 
+   freqC = 0.3142 
+   freqG = 0.2690 
+   freqT = 0.2164 
+   R(a) [AC] =  1.1154
+   R(b) [AG] =  7.1114
+   R(c) [AT] =  1.1154
+   R(d) [CG] =  1.0000
+   R(e) [CT] =  7.1114
+   R(f) [GT] =  1.0000
+   p-inv = 0.8880
+  Computation time = 00h:00:00:06  (00h:00:38:08)
+
+Maximum likelihod estimation for the TPM2uf+G model.
+  ML optimized tree topology
+   Model = TPM2uf+G
+   partition = 010212
+   -lnL = 2407.5204
+   K = 32
+   freqA = 0.2027 
+   freqC = 0.3106 
+   freqG = 0.2686 
+   freqT = 0.2182 
+   R(a) [AC] =  0.8488
+   R(b) [AG] =  6.1564
+   R(c) [AT] =  0.8488
+   R(d) [CG] =  1.0000
+   R(e) [CT] =  6.1564
+   R(f) [GT] =  1.0000
+   gamma shape = 0.0310
+  Computation time = 00h:00:00:08  (00h:00:39:06)
+
+Maximum likelihod estimation for the TPM2uf+I+G model.
+  ML optimized tree topology
+   Model = TPM2uf+I+G
+   partition = 010212
+   -lnL = 2412.1019
+   K = 33
+   freqA = 0.2020 
+   freqC = 0.3124 
+   freqG = 0.2694 
+   freqT = 0.2162 
+   R(a) [AC] =  1.0106
+   R(b) [AG] =  6.5575
+   R(c) [AT] =  1.0106
+   R(d) [CG] =  1.0000
+   R(e) [CT] =  6.5575
+   R(f) [GT] =  1.0000
+   p-inv = 0.8590
+   gamma shape = 94.7730
+  Computation time = 00h:00:03:00  (00h:00:42:06)
+
+Maximum likelihod estimation for the TPM3 model.
+  ML optimized tree topology
+   Model = TPM3
+   partition = 012012
+   -lnL = 2446.3462
+   K = 28
+   R(a) [AC] =  1.6506
+   R(b) [AG] =  8.4222
+   R(c) [AT] =  1.0000
+   R(d) [CG] =  1.6506
+   R(e) [CT] =  8.4222
+   R(f) [GT] =  1.0000
+  Computation time = 00h:00:00:02  (00h:00:42:08)
+
+Maximum likelihod estimation for the TPM3+I model.
+  ML optimized tree topology
+   Model = TPM3+I
+   partition = 012012
+   -lnL = 2436.7314
+   K = 29
+   R(a) [AC] =  1.5686
+   R(b) [AG] =  8.7752
+   R(c) [AT] =  1.0000
+   R(d) [CG] =  1.5686
+   R(e) [CT] =  8.7752
+   R(f) [GT] =  1.0000
+   p-inv = 0.8820
+  Computation time = 00h:00:00:06  (00h:00:43:05)
+
+Maximum likelihod estimation for the TPM3+G model.
+  ML optimized tree topology
+   Model = TPM3+G
+   partition = 012012
+   -lnL = 2426.4781
+   K = 29
+   R(a) [AC] =  1.6617
+   R(b) [AG] =  8.6600
+   R(c) [AT] =  1.0000
+   R(d) [CG] =  1.6617
+   R(e) [CT] =  8.6600
+   R(f) [GT] =  1.0000
+   gamma shape = 0.0310
+  Computation time = 00h:00:00:06  (00h:00:44:01)
+
+Maximum likelihod estimation for the TPM3+I+G model.
+  ML optimized tree topology
+   Model = TPM3+I+G
+   partition = 012012
+   -lnL = 2439.4420
+   K = 30
+   R(a) [AC] =  1.4952
+   R(b) [AG] =  8.7762
+   R(c) [AT] =  1.0000
+   R(d) [CG] =  1.4952
+   R(e) [CT] =  8.7762
+   R(f) [GT] =  1.0000
+   p-inv = 0.8780
+   gamma shape = 94.6920
+  Computation time = 00h:00:02:09  (00h:00:46:09)
+
+Maximum likelihod estimation for the TPM3uf model.
+  ML optimized tree topology
+   Model = TPM3uf
+   partition = 012012
+   -lnL = 2427.6824
+   K = 31
+   freqA = 0.2033 
+   freqC = 0.3090 
+   freqG = 0.2683 
+   freqT = 0.2194 
+   R(a) [AC] =  1.4045
+   R(b) [AG] =  7.8484
+   R(c) [AT] =  1.0000
+   R(d) [CG] =  1.4045
+   R(e) [CT] =  7.8484
+   R(f) [GT] =  1.0000
+  Computation time = 00h:00:00:03  (00h:00:47:02)
+
+Maximum likelihod estimation for the TPM3uf+I model.
+  ML optimized tree topology
+   Model = TPM3uf+I
+   partition = 012012
+   -lnL = 2424.1047
+   K = 32
+   freqA = 0.2007 
+   freqC = 0.3133 
+   freqG = 0.2686 
+   freqT = 0.2173 
+   R(a) [AC] =  1.3158
+   R(b) [AG] =  8.0843
+   R(c) [AT] =  1.0000
+   R(d) [CG] =  1.3158
+   R(e) [CT] =  8.0843
+   R(f) [GT] =  1.0000
+   p-inv = 0.8880
+  Computation time = 00h:00:00:06  (00h:00:47:08)
+
+Maximum likelihod estimation for the TPM3uf+G model.
+  ML optimized tree topology
+   Model = TPM3uf+G
+   partition = 012012
+   -lnL = 2407.3534
+   K = 32
+   freqA = 0.2023 
+   freqC = 0.3099 
+   freqG = 0.2688 
+   freqT = 0.2190 
+   R(a) [AC] =  1.3591
+   R(b) [AG] =  7.9651
+   R(c) [AT] =  1.0000
+   R(d) [CG] =  1.3591
+   R(e) [CT] =  7.9651
+   R(f) [GT] =  1.0000
+   gamma shape = 0.0310
+  Computation time = 00h:00:00:08  (00h:00:48:07)
+
+Maximum likelihod estimation for the TPM3uf+I+G model.
+  ML optimized tree topology
+   Model = TPM3uf+I+G
+   partition = 012012
+   -lnL = 2418.7632
+   K = 33
+   freqA = 0.2011 
+   freqC = 0.3133 
+   freqG = 0.2684 
+   freqT = 0.2172 
+   R(a) [AC] =  1.1656
+   R(b) [AG] =  7.9655
+   R(c) [AT] =  1.0000
+   R(d) [CG] =  1.1656
+   R(e) [CT] =  7.9655
+   R(f) [GT] =  1.0000
+   p-inv = 0.8810
+   gamma shape = 96.7250
+  Computation time = 00h:00:04:01  (00h:00:52:07)
+
+Maximum likelihod estimation for the TIM1ef model.
+  ML optimized tree topology
+   Model = TIM1ef
+   partition = 012230
+   -lnL = 2446.9325
+   K = 29
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  6.5967
+   R(c) [AT] =  1.1849
+   R(d) [CG] =  1.1849
+   R(e) [CT] =  6.9549
+   R(f) [GT] =  1.0000
+  Computation time = 00h:00:00:02  (00h:00:53:00)
+
+Maximum likelihod estimation for the TIM1ef+I model.
+  ML optimized tree topology
+   Model = TIM1ef+I
+   partition = 012230
+   -lnL = 2436.7073
+   K = 30
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  5.8877
+   R(c) [AT] =  1.0416
+   R(d) [CG] =  1.0416
+   R(e) [CT] =  7.8095
+   R(f) [GT] =  1.0000
+   p-inv = 0.8840
+  Computation time = 00h:00:00:05  (00h:00:53:05)
+
+Maximum likelihod estimation for the TIM1ef+G model.
+  ML optimized tree topology
+   Model = TIM1ef+G
+   partition = 012230
+   -lnL = 2427.0014
+   K = 30
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  6.6617
+   R(c) [AT] =  1.1949
+   R(d) [CG] =  1.1949
+   R(e) [CT] =  7.2796
+   R(f) [GT] =  1.0000
+   gamma shape = 0.0310
+  Computation time = 00h:00:00:06  (00h:00:54:01)
+
+Maximum likelihod estimation for the TIM1ef+I+G model.
+  ML optimized tree topology
+   Model = TIM1ef+I+G
+   partition = 012230
+   -lnL = 2439.5943
+   K = 31
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  6.0575
+   R(c) [AT] =  0.9374
+   R(d) [CG] =  0.9374
+   R(e) [CT] =  7.3082
+   R(f) [GT] =  1.0000
+   p-inv = 0.8790
+   gamma shape = 93.3650
+  Computation time = 00h:00:02:07  (00h:00:56:08)
+
+Maximum likelihod estimation for the TIM1 model.
+  ML optimized tree topology
+   Model = TIM1
+   partition = 012230
+   -lnL = 2427.9284
+   K = 32
+   freqA = 0.2029 
+   freqC = 0.3101 
+   freqG = 0.2679 
+   freqT = 0.2191 
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  6.9477
+   R(c) [AT] =  1.1246
+   R(d) [CG] =  1.1246
+   R(e) [CT] =  6.5876
+   R(f) [GT] =  1.0000
+  Computation time = 00h:00:00:03  (00h:00:57:01)
+
+Maximum likelihod estimation for the TIM1+I model.
+  ML optimized tree topology
+   Model = TIM1+I
+   partition = 012230
+   -lnL = 2424.1927
+   K = 33
+   freqA = 0.2010 
+   freqC = 0.3139 
+   freqG = 0.2691 
+   freqT = 0.2160 
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  6.0402
+   R(c) [AT] =  0.8513
+   R(d) [CG] =  0.8513
+   R(e) [CT] =  6.4790
+   R(f) [GT] =  1.0000
+   p-inv = 0.8880
+  Computation time = 00h:00:00:06  (00h:00:57:07)
+
+Maximum likelihod estimation for the TIM1+G model.
+  ML optimized tree topology
+   Model = TIM1+G
+   partition = 012230
+   -lnL = 2407.5548
+   K = 33
+   freqA = 0.2023 
+   freqC = 0.3107 
+   freqG = 0.2688 
+   freqT = 0.2184 
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  7.0517
+   R(c) [AT] =  1.1141
+   R(d) [CG] =  1.1141
+   R(e) [CT] =  6.8759
+   R(f) [GT] =  1.0000
+   gamma shape = 0.0310
+  Computation time = 00h:00:00:09  (00h:00:58:07)
+
+Maximum likelihod estimation for the TIM1+I+G model.
+  ML optimized tree topology
+   Model = TIM1+I+G
+   partition = 012230
+   -lnL = 2412.0706
+   K = 34
+   freqA = 0.2017 
+   freqC = 0.3129 
+   freqG = 0.2689 
+   freqT = 0.2165 
+   R(a) [AC] =  1.0000
+   R(b) [AG] =  6.7542
+   R(c) [AT] =  0.9935
+   R(d) [CG] =  0.9935
+   R(e) [CT] =  6.2879
+   R(f) [GT] =  1.0000
+   p-inv = 0.8580
+   gamma shape = 97.1780
+  Computation time = 00h:00:04:01  (00h:01:02:07)
+
+Maximum likelihod estimation for the TIM2ef model.
+  ML optimized tree topology
+   Model = TIM2ef
+   partition = 010232
+   -lnL = 2446.6313
+   K = 29
+   R(a) [AC] =  0.6926
+   R(b) [AG] =  5.1771
+   R(c) [AT] =  0.6926
+   R(d) [CG] =  1.0000
+   R(e) [CT] =  5.4579
+   R(f) [GT] =  1.0000
+  Computation time = 00h:00:00:02  (00h:01:03:00)
+
+Maximum likelihod estimation for the TIM2ef+I model.
+  ML optimized tree topology
+   Model = TIM2ef+I
+   partition = 010232
+   -lnL = 2436.5704
+   K = 30
+   R(a) [AC] =  0.7948
+   R(b) [AG] =  5.2423
+   R(c) [AT] =  0.7948
+   R(d) [CG] =  1.0000
+   R(e) [CT] =  6.9448
+   R(f) [GT] =  1.0000
+   p-inv = 0.8830
+  Computation time = 00h:00:00:07  (00h:01:03:06)
+
+Maximum likelihod estimation for the TIM2ef+G model.
+  ML optimized tree topology
+   Model = TIM2ef+G
+   partition = 010232
+   -lnL = 2426.7743
+   K = 30
+   R(a) [AC] =  0.7109
+   R(b) [AG] =  5.2706
+   R(c) [AT] =  0.7109
+   R(d) [CG] =  1.0000
+   R(e) [CT] =  5.7536
+   R(f) [GT] =  1.0000
+   gamma shape = 0.0310
+  Computation time = 00h:00:00:06  (00h:01:04:02)
+
+Maximum likelihod estimation for the TIM2ef+I+G model.
+  ML optimized tree topology
+   Model = TIM2ef+I+G
+   partition = 010232
+   -lnL = 2439.5405
+   K = 31
+   R(a) [AC] =  0.8565
+   R(b) [AG] =  5.8512
+   R(c) [AT] =  0.8565
+   R(d) [CG] =  1.0000
+   R(e) [CT] =  7.0743
+   R(f) [GT] =  1.0000
+   p-inv = 0.8790
+   gamma shape = 95.9480
+  Computation time = 00h:00:02:04  (00h:01:06:07)
+
+Maximum likelihod estimation for the TIM2 model.
+  ML optimized tree topology
+   Model = TIM2
+   partition = 010232
+   -lnL = 2427.8326
+   K = 32
+   freqA = 0.2033 
+   freqC = 0.3102 
+   freqG = 0.2674 
+   freqT = 0.2191 
+   R(a) [AC] =  0.8020
+   R(b) [AG] =  5.9775
+   R(c) [AT] =  0.8020
+   R(d) [CG] =  1.0000
+   R(e) [CT] =  5.6660
+   R(f) [GT] =  1.0000
+  Computation time = 00h:00:00:03  (00h:01:07:00)
+
+Maximum likelihod estimation for the TIM2+I model.
+  ML optimized tree topology
+   Model = TIM2+I
+   partition = 010232
+   -lnL = 2424.2310
+   K = 33
+   freqA = 0.2009 
+   freqC = 0.3138 
+   freqG = 0.2693 
+   freqT = 0.2160 
+   R(a) [AC] =  1.1116
+   R(b) [AG] =  6.8472
+   R(c) [AT] =  1.1116
+   R(d) [CG] =  1.0000
+   R(e) [CT] =  7.3342
+   R(f) [GT] =  1.0000
+   p-inv = 0.8890
+  Computation time = 00h:00:00:06  (00h:01:07:06)
+
+Maximum likelihod estimation for the TIM2+G model.
+  ML optimized tree topology
+   Model = TIM2+G
+   partition = 010232
+   -lnL = 2407.5162
+   K = 33
+   freqA = 0.2026 
+   freqC = 0.3107 
+   freqG = 0.2684 
+   freqT = 0.2184 
+   R(a) [AC] =  0.8487
+   R(b) [AG] =  6.2349
+   R(c) [AT] =  0.8487
+   R(d) [CG] =  1.0000
+   R(e) [CT] =  6.0872
+   R(f) [GT] =  1.0000
+   gamma shape = 0.0310
+  Computation time = 00h:00:00:08  (00h:01:08:03)
+
+Maximum likelihod estimation for the TIM2+I+G model.
+  ML optimized tree topology
+   Model = TIM2+I+G
+   partition = 010232
+   -lnL = 2412.0703
+   K = 34
+   freqA = 0.2016 
+   freqC = 0.3128 
+   freqG = 0.2690 
+   freqT = 0.2165 
+   R(a) [AC] =  1.0125
+   R(b) [AG] =  6.8138
+   R(c) [AT] =  1.0125
+   R(d) [CG] =  1.0000
+   R(e) [CT] =  6.3397
+   R(f) [GT] =  1.0000
+   p-inv = 0.8580
+   gamma shape = 95.1080
+  Computation time = 00h:00:03:01  (00h:01:11:05)
+
+Maximum likelihod estimation for the TIM3ef model.
+  ML optimized tree topology
+   Model = TIM3ef
+   partition = 012032
+   -lnL = 2446.3206
+   K = 29
+   R(a) [AC] =  1.6520
+   R(b) [AG] =  8.1961
+   R(c) [AT] =  1.0000
+   R(d) [CG] =  1.6520
+   R(e) [CT] =  8.6406
+   R(f) [GT] =  1.0000
+  Computation time = 00h:00:00:02  (00h:01:11:07)
+
+Maximum likelihod estimation for the TIM3ef+I model.
+  ML optimized tree topology
+   Model = TIM3ef+I
+   partition = 012032
+   -lnL = 2436.1921
+   K = 30
+   R(a) [AC] =  1.5825
+   R(b) [AG] =  7.5927
+   R(c) [AT] =  1.0000
+   R(d) [CG] =  1.5825
+   R(e) [CT] =  10.0975
+   R(f) [GT] =  1.0000
+   p-inv = 0.8830
+  Computation time = 00h:00:00:07  (00h:01:12:04)
+
+Maximum likelihod estimation for the TIM3ef+G model.
+  ML optimized tree topology
+   Model = TIM3ef+G
+   partition = 012032
+   -lnL = 2426.4151
+   K = 30
+   R(a) [AC] =  1.6641
+   R(b) [AG] =  8.2655
+   R(c) [AT] =  1.0000
+   R(d) [CG] =  1.6641
+   R(e) [CT] =  9.0518
+   R(f) [GT] =  1.0000
+   gamma shape = 0.0310
+  Computation time = 00h:00:00:06  (00h:01:13:00)
+
+Maximum likelihod estimation for the TIM3ef+I+G model.
+  ML optimized tree topology
+   Model = TIM3ef+I+G
+   partition = 012032
+   -lnL = 2439.1920
+   K = 31
+   R(a) [AC] =  1.5053
+   R(b) [AG] =  7.9669
+   R(c) [AT] =  1.0000
+   R(d) [CG] =  1.5053
+   R(e) [CT] =  9.6510
+   R(f) [GT] =  1.0000
+   p-inv = 0.8780
+   gamma shape = 94.3320
+  Computation time = 00h:00:02:06  (00h:01:15:07)
+
+Maximum likelihod estimation for the TIM3 model.
+  ML optimized tree topology
+   Model = TIM3
+   partition = 012032
+   -lnL = 2427.6571
+   K = 32
+   freqA = 0.2029 
+   freqC = 0.3094 
+   freqG = 0.2679 
+   freqT = 0.2198 
+   R(a) [AC] =  1.4049
+   R(b) [AG] =  8.0874
+   R(c) [AT] =  1.0000
+   R(d) [CG] =  1.4049
+   R(e) [CT] =  7.6598
+   R(f) [GT] =  1.0000
+  Computation time = 00h:00:00:03  (00h:01:16:00)
+
+Maximum likelihod estimation for the TIM3+I model.
+  ML optimized tree topology
+   Model = TIM3+I
+   partition = 012032
+   -lnL = 2424.0770
+   K = 33
+   freqA = 0.2012 
+   freqC = 0.3130 
+   freqG = 0.2689 
+   freqT = 0.2169 
+   R(a) [AC] =  1.3140
+   R(b) [AG] =  7.7966
+   R(c) [AT] =  1.0000
+   R(d) [CG] =  1.3140
+   R(e) [CT] =  8.3394
+   R(f) [GT] =  1.0000
+   p-inv = 0.8880
+  Computation time = 00h:00:00:06  (00h:01:16:06)
+
+Maximum likelihod estimation for the TIM3+G model.
+  ML optimized tree topology
+   Model = TIM3+G
+   partition = 012032
+   -lnL = 2407.3480
+   K = 33
+   freqA = 0.2021 
+   freqC = 0.3100 
+   freqG = 0.2687 
+   freqT = 0.2191 
+   R(a) [AC] =  1.3595
+   R(b) [AG] =  8.0875
+   R(c) [AT] =  1.0000
+   R(d) [CG] =  1.3595
+   R(e) [CT] =  7.8678
+   R(f) [GT] =  1.0000
+   gamma shape = 0.0310
+  Computation time = 00h:00:00:08  (00h:01:17:04)
+
+Maximum likelihod estimation for the TIM3+I+G model.
+  ML optimized tree topology
+   Model = TIM3+I+G
+   partition = 012032
+   -lnL = 2411.7723
+   K = 34
+   freqA = 0.2016 
+   freqC = 0.3120 
+   freqG = 0.2689 
+   freqT = 0.2175 
+   R(a) [AC] =  1.4159
+   R(b) [AG] =  8.4757
+   R(c) [AT] =  1.0000
+   R(d) [CG] =  1.4159
+   R(e) [CT] =  7.8579
+   R(f) [GT] =  1.0000
+   p-inv = 0.8580
+   gamma shape = 95.1070
+  Computation time = 00h:00:03:03  (00h:01:20:06)
+
+Maximum likelihod estimation for the TVMef model.
+  ML optimized tree topology
+   Model = TVMef
+   partition = 012314
+   -lnL = 2445.9528
+   K = 30
+   R(a) [AC] =  1.1429
+   R(b) [AG] =  7.2803
+   R(c) [AT] =  0.7044
+   R(d) [CG] =  1.6767
+   R(e) [CT] =  7.2803
+   R(f) [GT] =  1.0000
+  Computation time = 00h:00:00:03  (00h:01:20:09)
+
+Maximum likelihod estimation for the TVMef+I model.
+  ML optimized tree topology
+   Model = TVMef+I
+   partition = 012314
+   -lnL = 2436.5518
+   K = 31
+   R(a) [AC] =  1.2281
+   R(b) [AG] =  7.5426
+   R(c) [AT] =  0.6784
+   R(d) [CG] =  1.4492
+   R(e) [CT] =  7.5426
+   R(f) [GT] =  1.0000
+   p-inv = 0.8820
+  Computation time = 00h:00:00:05  (00h:01:21:04)
+
+Maximum likelihod estimation for the TVMef+G model.
+  ML optimized tree topology
+   Model = TVMef+G
+   partition = 012314
+   -lnL = 2426.1526
+   K = 31
+   R(a) [AC] =  1.1789
+   R(b) [AG] =  7.6011
+   R(c) [AT] =  0.7298
+   R(d) [CG] =  1.6956
+   R(e) [CT] =  7.6011
+   R(f) [GT] =  1.0000
+   gamma shape = 0.0310
+  Computation time = 00h:00:00:06  (00h:01:22:01)
+
+Maximum likelihod estimation for the TVMef+I+G model.
+  ML optimized tree topology
+   Model = TVMef+I+G
+   partition = 012314
+   -lnL = 2439.2947
+   K = 32
+   R(a) [AC] =  1.2524
+   R(b) [AG] =  7.4788
+   R(c) [AT] =  0.6610
+   R(d) [CG] =  1.2952
+   R(e) [CT] =  7.4788
+   R(f) [GT] =  1.0000
+   p-inv = 0.8780
+   gamma shape = 91.4850
+  Computation time = 00h:00:02:04  (00h:01:24:05)
+
+Maximum likelihod estimation for the TVM model.
+  ML optimized tree topology
+   Model = TVM
+   partition = 012314
+   -lnL = 2427.5454
+   K = 33
+   freqA = 0.2036 
+   freqC = 0.3091 
+   freqG = 0.2679 
+   freqT = 0.2194 
+   R(a) [AC] =  1.1227
+   R(b) [AG] =  7.1805
+   R(c) [AT] =  0.8025
+   R(d) [CG] =  1.4059
+   R(e) [CT] =  7.1805
+   R(f) [GT] =  1.0000
+  Computation time = 00h:00:00:03  (00h:01:24:08)
+
+Maximum likelihod estimation for the TVM+I model.
+  ML optimized tree topology
+   Model = TVM+I
+   partition = 012314
+   -lnL = 2423.9712
+   K = 34
+   freqA = 0.2004 
+   freqC = 0.3133 
+   freqG = 0.2690 
+   freqT = 0.2173 
+   R(a) [AC] =  1.4189
+   R(b) [AG] =  7.5478
+   R(c) [AT] =  0.8295
+   R(d) [CG] =  1.1067
+   R(e) [CT] =  7.5478
+   R(f) [GT] =  1.0000
+   p-inv = 0.8880
+  Computation time = 00h:00:00:04  (00h:01:25:02)
+
+Maximum likelihod estimation for the TVM+G model.
+  ML optimized tree topology
+   Model = TVM+G
+   partition = 012314
+   -lnL = 2407.2818
+   K = 34
+   freqA = 0.2027 
+   freqC = 0.3098 
+   freqG = 0.2686 
+   freqT = 0.2190 
+   R(a) [AC] =  1.1523
+   R(b) [AG] =  7.4869
+   R(c) [AT] =  0.8557
+   R(d) [CG] =  1.3665
+   R(e) [CT] =  7.4869
+   R(f) [GT] =  1.0000
+   gamma shape = 0.0310
+  Computation time = 00h:00:00:08  (00h:01:26:00)
+
+Maximum likelihod estimation for the TVM+I+G model.
+  ML optimized tree topology
+   Model = TVM+I+G
+   partition = 012314
+   -lnL = 2411.7926
+   K = 35
+   freqA = 0.2021 
+   freqC = 0.3116 
+   freqG = 0.2693 
+   freqT = 0.2171 
+   R(a) [AC] =  1.4092
+   R(b) [AG] =  7.8185
+   R(c) [AT] =  0.9018
+   R(d) [CG] =  1.3258
+   R(e) [CT] =  7.8185
+   R(f) [GT] =  1.0000
+   p-inv = 0.8580
+   gamma shape = 95.0200
+  Computation time = 00h:00:03:04  (00h:01:29:03)
+
+Maximum likelihod estimation for the SYM model.
+  ML optimized tree topology
+   Model = SYM
+   partition = 012345
+   -lnL = 2445.9272
+   K = 31
+   R(a) [AC] =  1.1443
+   R(b) [AG] =  7.0837
+   R(c) [AT] =  0.7045
+   R(d) [CG] =  1.6743
+   R(e) [CT] =  7.4676
+   R(f) [GT] =  1.0000
+  Computation time = 00h:00:00:03  (00h:01:29:06)
+
+Maximum likelihod estimation for the SYM+I model.
+  ML optimized tree topology
+   Model = SYM+I
+   partition = 012345
+   -lnL = 2436.0171
+   K = 32
+   R(a) [AC] =  1.2442
+   R(b) [AG] =  6.5381
+   R(c) [AT] =  0.6809
+   R(d) [CG] =  1.4617
+   R(e) [CT] =  8.6880
+   R(f) [GT] =  1.0000
+   p-inv = 0.8830
+  Computation time = 00h:00:00:07  (00h:01:30:03)
+
+Maximum likelihod estimation for the SYM+G model.
+  ML optimized tree topology
+   Model = SYM+G
+   partition = 012345
+   -lnL = 2426.0914
+   K = 32
+   R(a) [AC] =  1.1833
+   R(b) [AG] =  7.2641
+   R(c) [AT] =  0.7307
+   R(d) [CG] =  1.6973
+   R(e) [CT] =  7.9454
+   R(f) [GT] =  1.0000
+   gamma shape = 0.0310
+  Computation time = 00h:00:00:07  (00h:01:30:09)
+
+Maximum likelihod estimation for the SYM+I+G model.
+  ML optimized tree topology
+   Model = SYM+I+G
+   partition = 012345
+   -lnL = 2439.0469
+   K = 33
+   R(a) [AC] =  1.2630
+   R(b) [AG] =  6.7919
+   R(c) [AT] =  0.6616
+   R(d) [CG] =  1.3032
+   R(e) [CT] =  8.2223
+   R(f) [GT] =  1.0000
+   p-inv = 0.8780
+   gamma shape = 87.2960
+  Computation time = 00h:00:02:04  (00h:01:33:04)
+
+Maximum likelihod estimation for the GTR model.
+  ML optimized tree topology
+   Model = GTR
+   partition = 012345
+   -lnL = 2427.5205
+   K = 34
+   freqA = 0.2033 
+   freqC = 0.3094 
+   freqG = 0.2675 
+   freqT = 0.2198 
+   R(a) [AC] =  1.1264
+   R(b) [AG] =  7.3991
+   R(c) [AT] =  0.8036
+   R(d) [CG] =  1.4059
+   R(e) [CT] =  7.0170
+   R(f) [GT] =  1.0000
+  Computation time = 00h:00:00:03  (00h:01:33:07)
+
+Maximum likelihod estimation for the GTR+I model.
+  ML optimized tree topology
+   Model = GTR+I
+   partition = 012345
+   -lnL = 2423.9447
+   K = 35
+   freqA = 0.2009 
+   freqC = 0.3130 
+   freqG = 0.2692 
+   freqT = 0.2169 
+   R(a) [AC] =  1.4123
+   R(b) [AG] =  7.2718
+   R(c) [AT] =  0.8263
+   R(d) [CG] =  1.1054
+   R(e) [CT] =  7.7689
+   R(f) [GT] =  1.0000
+   p-inv = 0.8880
+  Computation time = 00h:00:00:06  (00h:01:34:03)
+
+Maximum likelihod estimation for the GTR+G model.
+  ML optimized tree topology
+   Model = GTR+G
+   partition = 012345
+   -lnL = 2407.2769
+   K = 35
+   freqA = 0.2025 
+   freqC = 0.3100 
+   freqG = 0.2683 
+   freqT = 0.2191 
+   R(a) [AC] =  1.1544
+   R(b) [AG] =  7.6055
+   R(c) [AT] =  0.8569
+   R(d) [CG] =  1.3675
+   R(e) [CT] =  7.4000
+   R(f) [GT] =  1.0000
+   gamma shape = 0.0310
+  Computation time = 00h:00:00:08  (00h:01:35:01)
+
+Maximum likelihod estimation for the GTR+I+G model.
+  ML optimized tree topology
+   Model = GTR+I+G
+   partition = 012345
+   -lnL = 2411.7577
+   K = 36
+   freqA = 0.2015 
+   freqC = 0.3120 
+   freqG = 0.2690 
+   freqT = 0.2176 
+   R(a) [AC] =  1.4159
+   R(b) [AG] =  8.1616
+   R(c) [AT] =  0.9056
+   R(d) [CG] =  1.3282
+   R(e) [CT] =  7.5581
+   R(f) [GT] =  1.0000
+   p-inv = 0.8580
+   gamma shape = 95.3710
+  Computation time = 00h:00:03:02  (00h:01:38:03)
+
+Computation of likelihood scores completed. It took 00h:01:38:03.
+
+
+
+
+---------------------------------------------------------------
+*                                                             *
+*        CORRECTED AKAIKE INFORMATION CRITERION (AICc)        *
+*                                                             *
+---------------------------------------------------------------
+
+Settings: 
+ Sample size = 1266
+
+ Model selected: 
+   Model = HKY+G
+   partition = 010010
+   -lnL = 2407.5916
+   K = 31
+   freqA = 0.2023 
+   freqC = 0.3106 
+   freqG = 0.2689 
+   freqT = 0.2183 
+   kappa = 6.5699 (ti/tv = 3.2215)
+   gamma shape = 0.0310
+
+
+* AICc MODEL SELECTION : Selection uncertainty
+
+Model             -lnL    K         AICc     delta      weight cumWeight
+------------------------------------------------------------------------
+HKY+G        2407.5916   31   4878.7910     0.0000      0.3307    0.3307
+TPM3uf+G     2407.3534   32   4880.4197     1.6286      0.1465    0.4772
+TPM2uf+G     2407.5204   32   4880.7537     1.9626      0.1240    0.6012
+TPM1uf+G     2407.5594   32   4880.8317     2.0407      0.1192    0.7204
+TrN+G        2407.5871   32   4880.8871     2.0960      0.1160    0.8363
+TIM3+G       2407.3480   33   4882.5174     3.7263      0.0513    0.8876
+TIM2+G       2407.5162   33   4882.8539     4.0629      0.0434    0.9310
+TIM1+G       2407.5548   33   4882.9311     4.1401      0.0417    0.9727
+TVM+G        2407.2818   34   4884.4971     5.7060      0.0191    0.9918
+GTR+G        2407.2769   35   4886.6025     7.8115      0.0067    0.9985
+TrN+I+G      2412.0708   33   4891.9630    13.1720      0.0005    0.9989
+TPM2uf+I+G   2412.1019   33   4892.0252    13.2341      0.0004    0.9994
+TIM3+I+G     2411.7723   34   4893.4779    14.6869      0.0002    0.9996
+TIM2+I+G     2412.0703   34   4894.0739    15.2829      0.0002    0.9997
+TIM1+I+G     2412.0706   34   4894.0747    15.2836      0.0002    0.9999
+TVM+I+G      2411.7926   35   4895.6341    16.8430   7.28e-005    1.0000
+GTR+I+G      2411.7577   36   4897.6830    18.8920   2.61e-005    1.0000
+HKY+I+G      2418.8199   32   4903.3527    24.5616   1.53e-006    1.0000
+TPM1uf+I+G   2418.7533   33   4905.3281    26.5370   5.71e-007    1.0000
+TPM3uf+I+G   2418.7632   33   4905.3479    26.5568   5.66e-007    1.0000
+K80+G        2427.1491   28   4911.6111    32.8201   2.47e-008    1.0000
+HKY+I        2424.2906   31   4912.1889    33.3979   1.85e-008    1.0000
+TPM3+G       2426.4781   29   4912.3639    33.5729   1.70e-008    1.0000
+TPM2+G       2426.8329   29   4913.0735    34.2825   1.19e-008    1.0000
+TPM1+G       2427.0614   29   4913.5305    34.7395   9.46e-009    1.0000
+TrNef+G      2427.0890   29   4913.5857    34.7947   9.20e-009    1.0000
+TPM3uf+I     2424.1047   32   4913.9223    35.1313   7.78e-009    1.0000
+TPM1uf+I     2424.2228   32   4914.1585    35.3674   6.91e-009    1.0000
+TPM2uf+I     2424.2598   32   4914.2325    35.4415   6.66e-009    1.0000
+TrN+I        2424.2602   32   4914.2333    35.4423   6.66e-009    1.0000
+TIM3ef+G     2426.4151   30   4914.3364    35.5453   6.32e-009    1.0000
+TIM2ef+G     2426.7743   30   4915.0547    36.2637   4.41e-009    1.0000
+TIM1ef+G     2427.0014   30   4915.5088    36.7177   3.52e-009    1.0000
+TVMef+G      2426.1526   31   4915.9130    37.1220   2.87e-009    1.0000
+TIM3+I       2424.0770   33   4915.9755    37.1844   2.79e-009    1.0000
+TIM1+I       2424.1927   33   4916.2068    37.4158   2.48e-009    1.0000
+TIM2+I       2424.2310   33   4916.2835    37.4924   2.39e-009    1.0000
+HKY          2427.9940   30   4917.4940    38.7030   1.30e-009    1.0000
+TVM+I        2423.9712   34   4917.8757    39.0847   1.08e-009    1.0000
+SYM+G        2426.0914   32   4917.8957    39.1046   1.07e-009    1.0000
+TPM3uf       2427.6824   31   4918.9725    40.1815   6.23e-010    1.0000
+TPM2uf       2427.8570   31   4919.3218    40.5308   5.23e-010    1.0000
+TPM1uf       2427.9532   31   4919.5142    40.7231   4.75e-010    1.0000
+TrN          2427.9692   31   4919.5462    40.7552   4.67e-010    1.0000
+GTR+I        2423.9447   35   4919.9381    41.1471   3.84e-010    1.0000
+TIM3         2427.6571   32   4921.0271    42.2361   2.23e-010    1.0000
+TIM2         2427.8326   32   4921.3781    42.5870   1.87e-010    1.0000
+TIM1         2427.9284   32   4921.5697    42.7787   1.70e-010    1.0000
+TVM          2427.5454   33   4922.9122    44.1212   8.68e-011    1.0000
+GTR          2427.5205   34   4924.9743    46.1833   3.10e-011    1.0000
+TrNef+I+G    2432.6280   30   4926.7620    47.9710   1.27e-011    1.0000
+K80+I        2437.2403   28   4931.7934    53.0024   1.02e-012    1.0000
+TrNef+I      2436.7113   29   4932.8304    54.0393   6.09e-013    1.0000
+TPM3+I       2436.7314   29   4932.8706    54.0795   5.97e-013    1.0000
+TPM2+I       2437.0954   29   4933.5986    54.8075   4.15e-013    1.0000
+TPM1+I       2437.2366   29   4933.8809    55.0898   3.60e-013    1.0000
+TIM3ef+I     2436.1921   30   4933.8904    55.0993   3.59e-013    1.0000
+TIM2ef+I     2436.5704   30   4934.6469    55.8559   2.46e-013    1.0000
+TIM1ef+I     2436.7073   30   4934.9207    56.1296   2.14e-013    1.0000
+TVMef+I      2436.5518   31   4936.7114    57.9204   8.75e-014    1.0000
+SYM+I        2436.0171   32   4937.7471    58.9560   5.22e-014    1.0000
+K80+I+G      2439.8459   29   4939.0995    60.3084   2.65e-014    1.0000
+TPM3+I+G     2439.4420   30   4940.3900    61.5990   1.39e-014    1.0000
+TPM2+I+G     2439.7802   30   4941.0665    62.2754   9.92e-015    1.0000
+TPM1+I+G     2439.8346   30   4941.1753    62.3843   9.39e-015    1.0000
+TIM3ef+I+G   2439.1920   31   4941.9918    63.2008   6.25e-015    1.0000
+TIM2ef+I+G   2439.5405   31   4942.6888    63.8978   4.41e-015    1.0000
+TIM1ef+I+G   2439.5943   31   4942.7964    64.0054   4.18e-015    1.0000
+TVMef+I+G    2439.2947   32   4944.3023    65.5113   1.97e-015    1.0000
+SYM+I+G      2439.0469   33   4945.9153    67.1242   8.78e-016    1.0000
+K80          2447.0426   27   4949.3065    70.5155   1.61e-016    1.0000
+TPM3         2446.3462   28   4950.0053    71.2142   1.14e-016    1.0000
+TPM2         2446.6570   28   4950.6268    71.8358   8.33e-017    1.0000
+TPM1         2446.9581   28   4951.2291    72.4380   6.16e-017    1.0000
+TrNef        2447.0170   28   4951.3468    72.5557   5.81e-017    1.0000
+TIM3ef       2446.3206   29   4952.0490    73.2580   4.09e-017    1.0000
+F81+G        2445.4606   30   4952.4274    73.6363   3.38e-017    1.0000
+TIM2ef       2446.6313   29   4952.6704    73.8794   3.00e-017    1.0000
+TIM1ef       2446.9325   29   4953.2727    74.4817   2.22e-017    1.0000
+TVMef        2445.9528   30   4953.4116    74.6206   2.07e-017    1.0000
+SYM          2445.9272   31   4955.4621    76.6711   7.42e-018    1.0000
+JC+G         2464.1478   27   4983.5168   104.7258   6.01e-024    1.0000
+F81          2465.1031   29   4989.6141   110.8230   2.85e-025    1.0000
+F81+I        2464.5935   30   4990.6931   111.9021   1.66e-025    1.0000
+F81+I+G      2464.3228   31   4992.2533   113.4623   7.61e-026    1.0000
+JC+I+G       2468.4056   28   4994.1241   115.3331   2.99e-026    1.0000
+JC           2483.6399   26   5020.4130   141.6220   5.84e-032    1.0000
+JC+I         2487.7488   27   5030.7188   151.9278   3.38e-034    1.0000
+------------------------------------------------------------------------
+-lnL:	negative log likelihod
+ K:	number of estimated parameters
+ AICc:	Corrected Akaike Information Criterion
+ delta:	AICc difference
+ weight:	AICc weight
+ cumWeight:	cumulative AICc weight
+
+Model selection results also available at the "Model > Show model table" menu
+
+
+* AICc MODEL SELECTION : Confidence interval
+
+There are 88 models in the 100% confidence interval: [ HKY+G TPM3uf+G TPM2uf+G TPM1uf+G TrN+G TIM3+G TIM2+G TIM1+G TVM+G GTR+G TrN+I+G TPM2uf+I+G TIM3+I+G TIM2+I+G TIM1+I+G TVM+I+G GTR+I+G HKY+I+G TPM1uf+I+G TPM3uf+I+G K80+G HKY+I TPM3+G TPM2+G TPM1+G TrNef+G TPM3uf+I TPM1uf+I TPM2uf+I TrN+I TIM3ef+G TIM2ef+G TIM1ef+G TVMef+G TIM3+I TIM1+I TIM2+I HKY TVM+I SYM+G TPM3uf TPM2uf TPM1uf TrN GTR+I TIM3 TIM2 TIM1 TVM GTR TrNef+I+G K80+I TrNef+I TPM3+I TPM2+I TPM1+I TIM3ef+I TIM2ef+I TIM1ef+I TVMef+I SYM+I K80+I+G TPM3+I+G TPM2+I+G TPM1+I+G TIM3ef+I+G TIM2ef+I+G TIM1ef+I+G TVMef+I+G SYM+I+G K80 TPM3 TPM2 TPM1 TrNef TIM3ef F81+G TIM2ef TIM1ef TVMef SYM JC+G F81 F81+I F81+I+G JC+I+G JC JC+I ] 
+
+
+* AICc MODEL SELECTION : Parameter importance
+
+Parameter   Importance
+----------------------
+fA	    1.0000
+fC	    1.0000
+fG	    1.0000
+fT	    1.0000
+kappa	    0.3307
+titv	    0.3307
+rAC	    0.3918
+rAG	    0.6693
+rAT	    0.3549
+rCG	    0.3849
+rCT	    0.6693
+rGT	    0.6693
+pinv(I)	    0.0000
+alpha(G)	    0.9985
+pinv(IG)	    0.0015
+alpha(IG)	    0.0015
+----------------------
+Values have been rounded.
+ (I):  considers only +I models.
+ (G):  considers only +G models.
+ (IG): considers only +I+G models.
+
+
+* AICc MODEL SELECTION : Model averaged estimates
+
+           Model-averaged
+Parameter       estimates
+-------------------------
+fA	       0.2023
+fC	       0.3104
+fG	       0.2688
+fT	       0.2184
+kappa	       6.5699
+titv	       3.2215
+rAC	       1.1271
+rAG	       7.0455
+rAT	       0.9700
+rCG	       1.2571
+rCT	       6.9768
+rGT	       1.0000
+pinv(I)	       0.8880
+alpha(G)	       0.0310
+pinv(IG)	       0.8583
+alpha(IG)	      95.6983
+-------------------------
+Numbers have been rounded.
+ (I):  considers only +I models.
+ (G):  considers only +G models.
+ (IG): considers only +I+G models.

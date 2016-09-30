@@ -1,0 +1,8 @@
+1)
+java -jar TreeCmp.jar -w 2 -d ms -i diff_taxa.trees -o diff_taxa.trees.w_2.out -P
+
+2)
+java -jar TreeCmp.jar -s -d mc rc tt -i diff_taxa.trees -o diff_taxa.trees.s.out -P
+
+3)
+java -jar TreeCmp.jar -m -d qt -i diff_taxa.trees -o diff_taxa.trees.m.out -P

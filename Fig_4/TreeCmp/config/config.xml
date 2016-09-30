@@ -1,0 +1,81 @@
+<?xml version = "1.0" ?>
+<config>
+	<defined_metrics>
+		<metric> 
+			<name>MatchingSplit</name>
+			<command_name>ms</command_name>
+			<class>treecmp.metric.MatchingSplitMetric</class>
+			<description>-Matching Split metric</description>
+                        <unif_data>unif_MS.txt</unif_data>
+                        <yule_data>yule_MS.txt</yule_data>
+                        <aln_file_suffix>.aln_MS.txt</aln_file_suffix>
+        </metric>
+        <metric>
+			<name>R-F</name>
+			<command_name>rf</command_name>
+			<class>treecmp.metric.RFMetric</class>
+			<description>-Robinson-Foulds metric</description>
+                        <unif_data>unif_RF.txt</unif_data>
+                        <yule_data>yule_RF.txt</yule_data>
+		</metric>
+        <metric>
+            <name>Quartet</name>
+			<command_name>qt</command_name>
+			<class>treecmp.metric.QuartetMetricLong</class>
+			<description>-Quartet metric</description>
+                        <unif_data>unif_QT.txt</unif_data>
+                        <yule_data>yule_QT.txt</yule_data>
+		</metric>
+        <metric>
+			<name>PathDiffernce</name>
+			<command_name>pd</command_name>
+			<class>treecmp.metric.NodalL2Metric</class>
+			<description>-Path Difference metric</description>
+                        <unif_data>unif_PD.txt</unif_data>
+                        <yule_data>yule_PD.txt</yule_data>
+		</metric>
+        <metric>
+			<name>NodalSplitted</name>
+			<command_name>ns</command_name>
+			<class>treecmp.metric.NodalL2SplittedMetric</class>
+			<description>-Nodal Splitted metric</description>
+                        <unif_data>unif_NS.txt</unif_data>
+                        <yule_data>yule_NS.txt</yule_data>
+                        <rooted>true</rooted>
+		</metric>
+        <metric>
+			<name>MatchingCluster</name>
+			<command_name>mc</command_name>
+			<class>treecmp.metric.MatchingClusterMetric</class>
+			<description>-Matching Cluster metric</description>
+                        <unif_data>unif_MC.txt</unif_data>
+                        <yule_data>yule_MC.txt</yule_data>
+                        <aln_file_suffix>.aln_MC.txt</aln_file_suffix>
+                        <rooted>true</rooted>
+		</metric>
+        <metric>
+			<name>R-F_Cluster</name>
+			<command_name>rc</command_name>
+			<class>treecmp.metric.RFClusterMetric</class>
+			<description>-Robinson-Foulds Cluster metric </description>
+                        <unif_data>unif_RC.txt</unif_data>
+                        <yule_data>yule_RC.txt</yule_data>
+                        <rooted>true</rooted>
+		</metric>
+        <metric>
+			<name>Triples</name>
+			<command_name>tt</command_name>
+			<class>treecmp.metric.TripletMetric</class>
+			<description>-Triplet metric </description>
+                        <unif_data>unif_TT.txt</unif_data>
+                        <yule_data>yule_TT.txt</yule_data>
+                        <rooted>true</rooted>
+		</metric>
+
+	</defined_metrics>
+	<reporting>
+		<filed_separator>tab</filed_separator>
+		<main-section>yes</main-section>
+		<summary-section>yes</summary-section>
+	</reporting>
+</config>

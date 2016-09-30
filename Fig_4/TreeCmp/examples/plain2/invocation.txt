@@ -1,0 +1,2 @@
+1)
+java -jar TreeCmp.jar -m -d ms -i plain2.trees -o plain2.trees.m.out

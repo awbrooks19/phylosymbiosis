@@ -1,0 +1,10 @@
+No	Tree1	Tree2	MatchingSplit
+1	1	2	58.0000
+2	3	4	24.0000
+3	5	6	10.0000
+4	7	8	13.0000
+5	9	10	14.0000
+---------
+Summary:
+Name	Avg	Std	Min	Max	Count
+MatchingSplit	23.8	17.73583942191629	10.0	58.0	5

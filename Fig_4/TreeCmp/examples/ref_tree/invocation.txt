@@ -1,0 +1,4 @@
+1)
+java -jar TreeCmp.jar -r ref_tree.trees -d ms -i test_set.trees -o test_set.trees.r.out -I
+
+

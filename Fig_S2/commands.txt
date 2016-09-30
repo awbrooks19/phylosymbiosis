@@ -1,0 +1,999 @@
+sed Drosophila_melanogaster mel
+
+sed -i.bu 's/Drosophila_melanogaster/mel/g' random_trees.newick
+sed -i.bu 's/Drosophila_pseudoobscura/psudo/g' random_trees.newick
+sed -i.bu 's/Drosophila_mojavensis/moj/g' random_trees.newick
+sed -i.bu 's/Drosophila_erecta/erect/g' random_trees.newick
+sed -i.bu 's/Drosophila_melanogaster/mel/g' random_trees.newick
+sed -i.bu 's/Drosophila_melanogaster/mel/g' random_trees.newick
+
+################################################################################
+### Drosophila ###
+
+ds="drosophila"
+methodin="ms"
+
+refin=$ds"/newick/ht.newick"
+comparein=$ds"/newick/mt.newick"
+out=$ds"/treecmp_"$methodin".txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out
+
+out=$ds"/treecmp_"$methodin"_norm.txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+
+methodin="rf"
+out=$ds"/treecmp_"$methodin".txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out
+
+out=$ds"/treecmp_"$methodin"_norm.txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+
+# STOCHASTIC COMPARE #
+ds="drosophila"
+methodin="ms"
+refin=$ds"/newick/ht.newick"
+comparein=$ds"/random_trees.newick"
+out=$ds"/treecmp_"$methodin"_stochastic_norm.txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+
+# STOCHASTIC COMPARE RANDOM FOREST #
+ds="drosophila"
+methodin="rf"
+refin=$ds"/newick/ht.newick"
+comparein=$ds"/random_trees.newick"
+out=$ds"/treecmp_"$methodin"_stochastic_norm.txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+
+./pandas_collate_robinson_foulds.py -i 'drosophila/*' -o drosophila/collate/ -v
+# then enter 8,7   - 0 - 0
+
+### MATCHING SPLIT ###
+Host-Microbe Score:   4.0
+
+Better Score:         26580
+Worse Score:          63602
+Equiv Score:          9818
+P-value better:       0.2658
+
+Better\Equal Score:   36398
+Worse Score:          63602
+P-value Better/Equal: 0.36398
+
+### ROBINSON-FOULDS ###
+Host-Microbe Score:   2.0
+
+Better Score:         6562
+Worse Score:          63602
+Equiv Score:          29836
+P-value better:       0.06562
+
+Better\Equal Score:   36398
+Worse Score:          63602
+P-value Better/Equal: 0.36398
+
+### ROOTED METRICS ###
+ds="drosophila"
+methodin="mc"
+refin=$ds"/newick/ht.newick"
+comparein=$ds"/newick/mt.newick"
+out=$ds"/treecmp_"$methodin"_norm.txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+
+methodin="rc"
+out=$ds"/treecmp_"$methodin"_norm.txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+
+methodin="mc"
+comparein=$ds"/random_trees.newick"
+out=$ds"/treecmp_"$methodin"_stochastic_norm.txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+
+methodin="rc"
+comparein=$ds"/random_trees.newick"
+out=$ds"/treecmp_"$methodin"_stochastic_norm.txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+
+./pandas_collate_robinson_foulds_mc.py -i 'drosophila/*' -o drosophila/collate/ -v
+./pandas_collate_robinson_foulds_rc.py -i 'drosophila/*' -o drosophila/collate/ -v
+
+### MATCHING CLUSTER ###
+Host-Microbe Score:   4.0
+
+Better Score:         405
+Worse Score:          98761
+Equiv Score:          834
+P-value better:       0.00405
+
+Better\Equal Score:   1239
+Worse Score:          98761
+P-value Better/Equal: 0.01239
+
+### ROBINSON-FOULDS CLUSTER ###
+Host-Microbe Score:   2.0
+
+Better Score:         666
+Worse Score:          95371
+Equiv Score:          3963
+P-value better:       0.00666
+
+Better\Equal Score:   4629
+Worse Score:          95371
+P-value Better/Equal: 0.04629
+
+### GET MAXIMUM FOR EACH METRIC ###
+ds=drosophila
+./pandas_collate_robinson_foulds_ms.py -i $ds'/*' -o $ds/collate/ -v
+./pandas_collate_robinson_foulds_rf.py -i $ds'/*' -o $ds/collate/ -v
+./pandas_collate_robinson_foulds_mc.py -i $ds'/*' -o $ds/collate/ -v
+./pandas_collate_robinson_foulds_rc.py -i $ds'/*' -o $ds/collate/ -v
+
+################################################################################
+# Hominid #
+
+ds="hominid"
+methodin="ms"
+
+refin=$ds"/newick/ht.newick"
+comparein=$ds"/newick/mt.newick"
+out=$ds"/treecmp_"$methodin".txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out
+
+out=$ds"/treecmp_"$methodin"_norm.txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+
+methodin="rf"
+out=$ds"/treecmp_"$methodin".txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out
+
+out=$ds"/treecmp_"$methodin"_norm.txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+
+# STOCHASTIC COMPARE #
+ds="hominid"
+methodin="ms"
+refin=$ds"/newick/ht.newick"
+comparein=$ds"/random_trees.newick"
+out=$ds"/treecmp_"$methodin"_stochastic_norm.txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+
+# STOCHASTIC COMPARE RANDOM FOREST #
+ds="hominid"
+methodin="rf"
+refin=$ds"/newick/ht.newick"
+comparein=$ds"/random_trees.newick"
+out=$ds"/treecmp_"$methodin"_stochastic_norm.txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+
+### MATCHING SPLIT ###
+Host-Microbe Score:   3.0
+
+Better Score:         577
+Worse Score:          98467
+Equiv Score:          956
+P-value better:       0.00577
+
+Better\Equal Score:   1533
+Worse Score:          98467
+P-value Better/Equal: 0.01533
+
+### ROBINSON-FOULDS ###
+Host-Microbe Score:   1.0
+
+Better Score:         93
+Worse Score:          99070
+Equiv Score:          837
+P-value better:       0.00093
+
+Better\Equal Score:   930
+Worse Score:          99070
+P-value Better/Equal: 0.0093
+
+### ROOTED METRICS ###
+ds="hominid"
+methodin="mc"
+refin=$ds"/newick/ht.newick"
+comparein=$ds"/newick/mt.newick"
+out=$ds"/treecmp_"$methodin"_norm.txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+
+methodin="rc"
+out=$ds"/treecmp_"$methodin"_norm.txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+
+methodin="mc"
+comparein=$ds"/random_trees.newick"
+out=$ds"/treecmp_"$methodin"_stochastic_norm.txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+
+methodin="rc"
+comparein=$ds"/random_trees.newick"
+out=$ds"/treecmp_"$methodin"_stochastic_norm.txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+
+
+./pandas_collate_robinson_foulds_mc.py -i 'hominid/*' -o hominid/collate/ -v
+./pandas_collate_robinson_foulds_rc.py -i 'hominid/*' -o hominid/collate/ -v
+
+### MATCHING CLUSTER ###
+Host-Microbe Score:   5.0
+
+Better Score:         107
+Worse Score:          99893
+Equiv Score:          0
+P-value better:       0.00107
+
+Better\Equal Score:   107
+Worse Score:          99893
+P-value Better/Equal: 0.00107
+
+### ROBINSON-FOULDS CLUSTER ###
+Host-Microbe Score:   1.5
+
+Better Score:         26
+Worse Score:          99740
+Equiv Score:          234
+P-value better:       0.00026
+
+Better\Equal Score:   260
+Worse Score:          99740
+P-value Better/Equal: 0.0026
+
+### GET MAXIMUM FOR EACH METRIC ###
+ds=hominid
+./pandas_collate_robinson_foulds_ms.py -i $ds'/*' -o $ds/collate/ -v
+./pandas_collate_robinson_foulds_rf.py -i $ds'/*' -o $ds/collate/ -v
+./pandas_collate_robinson_foulds_mc.py -i $ds'/*' -o $ds/collate/ -v
+./pandas_collate_robinson_foulds_rc.py -i $ds'/*' -o $ds/collate/ -v
+
+################################################################################
+# Mosquito #
+
+ds="mosquito"
+methodin="ms"
+
+refin=$ds"/newick/ht.newick"
+comparein=$ds"/newick/mt.newick"
+out=$ds"/treecmp_"$methodin".txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out
+
+out=$ds"/treecmp_"$methodin"_norm.txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+
+methodin="rf"
+out=$ds"/treecmp_"$methodin".txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out
+
+out=$ds"/treecmp_"$methodin"_norm.txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+
+# STOCHASTIC COMPARE #
+ds="mosquito"
+methodin="ms"
+refin=$ds"/newick/ht.newick"
+comparein=$ds"/random_trees.newick"
+out=$ds"/treecmp_"$methodin"_stochastic_norm.txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+
+# STOCHASTIC COMPARE RANDOM FOREST #
+ds="mosquito"
+methodin="rf"
+refin=$ds"/newick/ht.newick"
+comparein=$ds"/random_trees.newick"
+out=$ds"/treecmp_"$methodin"_stochastic_norm.txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+
+### MATCHING SPLIT ###
+Host-Microbe Score:   4.0
+
+Better Score:         112
+Worse Score:          99586
+Equiv Score:          302
+P-value better:       0.00112
+
+Better\Equal Score:   414
+Worse Score:          99586
+P-value Better/Equal: 0.00414
+
+### ROBINSON-FOULDS ###
+Host-Microbe Score:   2.0
+
+Better Score:         74
+Worse Score:          99359
+Equiv Score:          567
+P-value better:       0.00074
+
+Better\Equal Score:   641
+Worse Score:          99359
+P-value Better/Equal: 0.00641
+
+### ROOTED METRICS ###
+ds="mosquito"
+methodin="mc"
+refin=$ds"/newick/ht.newick"
+comparein=$ds"/newick/mt.newick"
+out=$ds"/treecmp_"$methodin"_norm.txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+
+methodin="rc"
+out=$ds"/treecmp_"$methodin"_norm.txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+
+methodin="mc"
+comparein=$ds"/random_trees.newick"
+out=$ds"/treecmp_"$methodin"_stochastic_norm.txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+
+methodin="rc"
+comparein=$ds"/random_trees.newick"
+out=$ds"/treecmp_"$methodin"_stochastic_norm.txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+
+./pandas_collate_robinson_foulds_mc.py -i 'mosquito/*' -o mosquito/collate/ -v
+./pandas_collate_robinson_foulds_rc.py -i 'mosquito/*' -o mosquito/collate/ -v
+
+### MATCHING CLUSTER ###
+Host-Microbe Score:   4.0
+
+Better Score:         5
+Worse Score:          99943
+Equiv Score:          52
+P-value better:       5e-05
+
+Better\Equal Score:   57
+Worse Score:          99943
+P-value Better/Equal: 0.00057
+
+### ROBINSON-FOULDS CLUSTER ###
+Host-Microbe Score:   2.0
+
+Better Score:         11
+Worse Score:          99884
+Equiv Score:          105
+P-value better:       0.00011
+
+Better\Equal Score:   116
+Worse Score:          99884
+P-value Better/Equal: 0.00116
+
+### GET MAXIMUM FOR EACH METRIC ###
+ds=mosquito
+./pandas_collate_robinson_foulds_ms.py -i $ds'/*' -o $ds/collate/ -v
+./pandas_collate_robinson_foulds_rf.py -i $ds'/*' -o $ds/collate/ -v
+./pandas_collate_robinson_foulds_mc.py -i $ds'/*' -o $ds/collate/ -v
+./pandas_collate_robinson_foulds_rc.py -i $ds'/*' -o $ds/collate/ -v
+
+################################################################################
+# Nasonia #
+
+ds="nasonia"
+methodin="ms"
+
+refin=$ds"/newick/ht.newick"
+comparein=$ds"/newick/mt.newick"
+out=$ds"/treecmp_"$methodin".txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out
+
+out=$ds"/treecmp_"$methodin"_norm.txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+
+methodin="rf"
+out=$ds"/treecmp_"$methodin".txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out
+
+out=$ds"/treecmp_"$methodin"_norm.txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+
+# STOCHASTIC COMPARE #
+ds="nasonia"
+methodin="ms"
+refin=$ds"/newick/ht.newick"
+comparein=$ds"/random_trees.newick"
+out=$ds"/treecmp_"$methodin"_stochastic_norm.txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+
+# STOCHASTIC COMPARE RANDOM FOREST #
+ds="nasonia"
+methodin="rf"
+refin=$ds"/newick/ht.newick"
+comparein=$ds"/random_trees.newick"
+out=$ds"/treecmp_"$methodin"_stochastic_norm.txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+
+### MATCHING SPLIT ###
+Host-Microbe Score:   0.0
+
+Better Score:         0
+Worse Score:          66805
+Equiv Score:          33195
+P-value better:       0.0
+
+Better\Equal Score:   33195
+Worse Score:          66805
+P-value Better/Equal: 0.33195
+
+### ROBINSON-FOULDS ###
+Host-Microbe Score:   0.0
+
+Better Score:         0
+Worse Score:          66805
+Equiv Score:          33195
+P-value better:       0.0
+
+Better\Equal Score:   33195
+Worse Score:          66805
+P-value Better/Equal: 0.33195
+
+### ROOTED METRICS ###
+ds="nasonia"
+methodin="mc"
+refin=$ds"/newick/ht.newick"
+comparein=$ds"/newick/mt.newick"
+out=$ds"/treecmp_"$methodin"_norm.txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+
+methodin="rc"
+out=$ds"/treecmp_"$methodin"_norm.txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+
+methodin="mc"
+comparein=$ds"/random_trees.newick"
+out=$ds"/treecmp_"$methodin"_stochastic_norm.txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+
+methodin="rc"
+comparein=$ds"/random_trees.newick"
+out=$ds"/treecmp_"$methodin"_stochastic_norm.txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+
+./pandas_collate_robinson_foulds_mc.py -i 'nasonia/*' -o nasonia/collate/ -v
+./pandas_collate_robinson_foulds_rc.py -i 'nasonia/*' -o nasonia/collate/ -v
+
+### MATCHING CLUSTER ###
+Host-Microbe Score:   0.0
+
+Better Score:         0
+Worse Score:          95790
+Equiv Score:          4210
+P-value better:       0.0
+
+Better\Equal Score:   4210
+Worse Score:          95790
+P-value Better/Equal: 0.0421
+
+### ROBINSON-FOULDS CLUSTER ###
+Host-Microbe Score:   0.0
+
+Better Score:         0
+Worse Score:          95790
+Equiv Score:          4210
+P-value better:       0.0
+
+Better\Equal Score:   4210
+Worse Score:          95790
+P-value Better/Equal: 0.0421
+
+### GET MAXIMUM FOR EACH METRIC ###
+ds=nasonia
+./pandas_collate_robinson_foulds_ms.py -i $ds'/*' -o $ds/collate/ -v
+./pandas_collate_robinson_foulds_rf.py -i $ds'/*' -o $ds/collate/ -v
+./pandas_collate_robinson_foulds_mc.py -i $ds'/*' -o $ds/collate/ -v
+./pandas_collate_robinson_foulds_rc.py -i $ds'/*' -o $ds/collate/ -v
+
+################################################################################
+# Peromyscus #
+
+ds="peromyscus"
+methodin="ms"
+
+refin=$ds"/newick/ht.newick"
+comparein=$ds"/newick/mt.newick"
+out=$ds"/treecmp_"$methodin".txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out
+
+out=$ds"/treecmp_"$methodin"_norm.txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+
+methodin="rf"
+out=$ds"/treecmp_"$methodin".txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out
+
+out=$ds"/treecmp_"$methodin"_norm.txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+
+# STOCHASTIC COMPARE #
+ds="peromyscus"
+methodin="ms"
+refin=$ds"/newick/ht.newick"
+comparein=$ds"/random_trees.newick"
+out=$ds"/treecmp_"$methodin"_stochastic_norm.txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+
+# STOCHASTIC COMPARE RANDOM FOREST #
+ds="peromyscus"
+methodin="rf"
+refin=$ds"/newick/ht.newick"
+comparein=$ds"/random_trees.newick"
+out=$ds"/treecmp_"$methodin"_stochastic_norm.txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+
+### MATCHING SPLIT ###
+Host-Microbe Score:   2.0
+
+Better Score:         833
+Worse Score:          95001
+Equiv Score:          4166
+P-value better:       0.00833
+
+Better\Equal Score:   4999
+Worse Score:          95001
+P-value Better/Equal: 0.04999
+
+### ROBINSON-FOULDS ###
+Host-Microbe Score:   1.0
+
+Better Score:         833
+Worse Score:          93387
+Equiv Score:          5780
+P-value better:       0.00833
+
+Better\Equal Score:   6613
+Worse Score:          93387
+P-value Better/Equal: 0.06613
+
+### ROOTED METRICS ###
+ds="peromyscus"
+methodin="mc"
+refin=$ds"/newick/ht.newick"
+comparein=$ds"/newick/mt.newick"
+out=$ds"/treecmp_"$methodin"_norm.txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+
+methodin="rc"
+out=$ds"/treecmp_"$methodin"_norm.txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+
+methodin="mc"
+comparein=$ds"/random_trees.newick"
+out=$ds"/treecmp_"$methodin"_stochastic_norm.txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+
+methodin="rc"
+comparein=$ds"/random_trees.newick"
+out=$ds"/treecmp_"$methodin"_stochastic_norm.txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+
+./pandas_collate_robinson_foulds_mc.py -i 'peromyscus/*' -o peromyscus/collate/ -v
+./pandas_collate_robinson_foulds_rc.py -i 'peromyscus/*' -o peromyscus/collate/ -v
+
+### MATCHING CLUSTER ###
+Host-Microbe Score:   3.0
+
+Better Score:         0
+Worse Score:          99377
+Equiv Score:          623
+P-value better:       0.0
+
+Better\Equal Score:   623
+Worse Score:          99377
+P-value Better/Equal: 0.00623
+
+
+### ROBINSON-FOULDS CLUSTER ###
+Host-Microbe Score:   2.0
+
+Better Score:         568
+Worse Score:          94424
+Equiv Score:          5008
+P-value better:       0.00568
+
+Better\Equal Score:   5576
+Worse Score:          94424
+P-value Better/Equal: 0.05576
+
+### GET MAXIMUM FOR EACH METRIC ###
+ds=peromyscus
+./pandas_collate_robinson_foulds_ms.py -i $ds'/*' -o $ds/collate/ -v
+./pandas_collate_robinson_foulds_rf.py -i $ds'/*' -o $ds/collate/ -v
+./pandas_collate_robinson_foulds_mc.py -i $ds'/*' -o $ds/collate/ -v
+./pandas_collate_robinson_foulds_rc.py -i $ds'/*' -o $ds/collate/ -v
+
+############# SECOND RUN ###############
+./tree_random.py -o peromyscus/random_trees -n 100000 -i P_californicus,P_eremicus,P_leucopus,P_maniculatus,P_polionotus,P_aztecus
+
+
+for i in peromyscus/random_trees_2/*
+do
+    echo $i
+    cat $i >> peromyscus/random_trees_2.newick
+done
+
+# STOCHASTIC COMPARE #
+ds="peromyscus"
+methodin="ms"
+refin=$ds"/newick/ht.newick"
+comparein=$ds"/random_trees_2.newick"
+out=$ds"/treecmp_"$methodin"_stochastic_norm_2.txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+
+# STOCHASTIC COMPARE RANDOM FOREST #
+ds="peromyscus"
+methodin="rf"
+refin=$ds"/newick/ht.newick"
+comparein=$ds"/random_trees_2.newick"
+out=$ds"/treecmp_"$methodin"_stochastic_norm_2.txt"
+java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+
+### MATCHING SPLIT ###
+Host-Microbe Score:   2.0
+
+Better Score:         882
+Worse Score:          94993
+Equiv Score:          4125
+P-value better:       0.00882
+
+Better\Equal Score:   5007
+Worse Score:          94993
+P-value Better/Equal: 0.05007
+
+### ROBINSON-FOULDS ###
+Host-Microbe Score:   1.0
+
+Better Score:         882
+Worse Score:          93278
+Equiv Score:          5840
+P-value better:       0.00882
+
+Better\Equal Score:   6722
+Worse Score:          93278
+P-value Better/Equal: 0.06722
+
+################################################################################
+################################################################################
+################################################################################
+# OUTPUT # - stochastic trees (random topologies)
+
+Andrews-MacBook-Pro:final_trees brooks$ # STOCHASTIC COMPARE #
+Andrews-MacBook-Pro:final_trees brooks$ ds="drosophila"
+Andrews-MacBook-Pro:final_trees brooks$ methodin="ms"
+Andrews-MacBook-Pro:final_trees brooks$ refin=$ds"/newick/ht.newick"
+Andrews-MacBook-Pro:final_trees brooks$ comparein=$ds"/random_trees.newick"
+Andrews-MacBook-Pro:final_trees brooks$ out=$ds"/treecmp_"$methodin"_stochastic_norm.txt"
+Andrews-MacBook-Pro:final_trees brooks$ java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+TreeCmp version 1.0-b291
+
+Active options:
+Type of the analysis:  one-to-all comparison mode (-r)
+Metrics:
+  1. MatchingSplit (ms)
+Input file: drosophila/random_trees.newick
+Output file: drosophila/treecmp_ms_stochastic_norm.txt
+Additional options:
+N - Report normalized distances.
+-----
+2016-04-05 15:51:26: Start of reading random statistics.
+2016-04-05 15:51:26: End of reading random statistics.
+2016-04-05 15:51:26: Start of scanning input file: drosophila/random_trees.newick
+2016-04-05 15:51:28: End of scanning input file: drosophila/random_trees.newick
+2016-04-05 15:51:28: 100000 valid trees found in file: drosophila/random_trees.newick
+2016-04-05 15:51:28: Start of calculation...please wait...
+2016-04-05 15:51:28: 0.00% completed...
+2016-04-05 15:51:29: 5.00% completed...
+2016-04-05 15:51:29: 10.00% completed...
+2016-04-05 15:51:29: 15.00% completed...
+2016-04-05 15:51:29: 20.00% completed...
+2016-04-05 15:51:29: 25.00% completed...
+2016-04-05 15:51:29: 30.00% completed...
+2016-04-05 15:51:30: 35.00% completed...
+2016-04-05 15:51:30: 40.00% completed...
+2016-04-05 15:51:30: 45.00% completed...
+2016-04-05 15:51:30: 50.00% completed...
+2016-04-05 15:51:30: 55.00% completed...
+2016-04-05 15:51:30: 60.00% completed...
+2016-04-05 15:51:31: 65.00% completed...
+2016-04-05 15:51:31: 70.00% completed...
+2016-04-05 15:51:31: 75.00% completed...
+2016-04-05 15:51:31: 80.00% completed...
+2016-04-05 15:51:31: 85.00% completed...
+2016-04-05 15:51:31: 90.00% completed...
+2016-04-05 15:51:31: 95.00% completed...
+2016-04-05 15:51:31: 100.00% completed.
+2016-04-05 15:51:31: End of calculation.
+2016-04-05 15:51:31: Total calculation time: 3236 ms.
+Andrews-MacBook-Pro:final_trees brooks$ 
+Andrews-MacBook-Pro:final_trees brooks$ 
+Andrews-MacBook-Pro:final_trees brooks$ 
+Andrews-MacBook-Pro:final_trees brooks$ # STOCHASTIC COMPARE #
+Andrews-MacBook-Pro:final_trees brooks$ ds="hominid"
+Andrews-MacBook-Pro:final_trees brooks$ methodin="ms"
+Andrews-MacBook-Pro:final_trees brooks$ refin=$ds"/newick/ht.newick"
+Andrews-MacBook-Pro:final_trees brooks$ comparein=$ds"/random_trees.newick"
+Andrews-MacBook-Pro:final_trees brooks$ out=$ds"/treecmp_"$methodin"_stochastic_norm.txt"
+Andrews-MacBook-Pro:final_trees brooks$ java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+TreeCmp version 1.0-b291
+
+Active options:
+Type of the analysis:  one-to-all comparison mode (-r)
+Metrics:
+  1. MatchingSplit (ms)
+Input file: hominid/random_trees.newick
+Output file: hominid/treecmp_ms_stochastic_norm.txt
+Additional options:
+N - Report normalized distances.
+-----
+2016-04-05 15:51:38: Start of reading random statistics.
+2016-04-05 15:51:38: End of reading random statistics.
+2016-04-05 15:51:38: Start of scanning input file: hominid/random_trees.newick
+2016-04-05 15:51:40: End of scanning input file: hominid/random_trees.newick
+2016-04-05 15:51:40: 100000 valid trees found in file: hominid/random_trees.newick
+2016-04-05 15:51:40: Start of calculation...please wait...
+2016-04-05 15:51:40: 0.00% completed...
+2016-04-05 15:51:41: 5.00% completed...
+2016-04-05 15:51:41: 10.00% completed...
+2016-04-05 15:51:41: 15.00% completed...
+2016-04-05 15:51:41: 20.00% completed...
+2016-04-05 15:51:42: 25.00% completed...
+2016-04-05 15:51:42: 30.00% completed...
+2016-04-05 15:51:42: 35.00% completed...
+2016-04-05 15:51:42: 40.00% completed...
+2016-04-05 15:51:42: 45.00% completed...
+2016-04-05 15:51:42: 50.00% completed...
+2016-04-05 15:51:42: 55.00% completed...
+2016-04-05 15:51:43: 60.00% completed...
+2016-04-05 15:51:43: 65.00% completed...
+2016-04-05 15:51:43: 70.00% completed...
+2016-04-05 15:51:43: 75.00% completed...
+2016-04-05 15:51:43: 80.00% completed...
+2016-04-05 15:51:43: 85.00% completed...
+2016-04-05 15:51:43: 90.00% completed...
+2016-04-05 15:51:44: 95.00% completed...
+2016-04-05 15:51:44: 100.00% completed.
+2016-04-05 15:51:44: End of calculation.
+2016-04-05 15:51:44: Total calculation time: 3564 ms.
+Andrews-MacBook-Pro:final_trees brooks$ 
+Andrews-MacBook-Pro:final_trees brooks$ 
+Andrews-MacBook-Pro:final_trees brooks$ # STOCHASTIC COMPARE #
+Andrews-MacBook-Pro:final_trees brooks$ ds="mosquito"
+Andrews-MacBook-Pro:final_trees brooks$ methodin="ms"
+Andrews-MacBook-Pro:final_trees brooks$ refin=$ds"/newick/ht.newick"
+Andrews-MacBook-Pro:final_trees brooks$ comparein=$ds"/random_trees.newick"
+Andrews-MacBook-Pro:final_trees brooks$ out=$ds"/treecmp_"$methodin"_stochastic_norm.txt"
+Andrews-MacBook-Pro:final_trees brooks$ java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+TreeCmp version 1.0-b291
+
+Active options:
+Type of the analysis:  one-to-all comparison mode (-r)
+Metrics:
+  1. MatchingSplit (ms)
+Input file: mosquito/random_trees.newick
+Output file: mosquito/treecmp_ms_stochastic_norm.txt
+Additional options:
+N - Report normalized distances.
+-----
+2016-04-05 15:51:47: Start of reading random statistics.
+2016-04-05 15:51:47: End of reading random statistics.
+2016-04-05 15:51:47: Start of scanning input file: mosquito/random_trees.newick
+2016-04-05 15:51:49: End of scanning input file: mosquito/random_trees.newick
+2016-04-05 15:51:49: 100000 valid trees found in file: mosquito/random_trees.newick
+2016-04-05 15:51:49: Start of calculation...please wait...
+2016-04-05 15:51:49: 0.00% completed...
+2016-04-05 15:51:49: 5.00% completed...
+2016-04-05 15:51:49: 10.00% completed...
+2016-04-05 15:51:50: 15.00% completed...
+2016-04-05 15:51:50: 20.00% completed...
+2016-04-05 15:51:50: 25.00% completed...
+2016-04-05 15:51:50: 30.00% completed...
+2016-04-05 15:51:50: 35.00% completed...
+2016-04-05 15:51:51: 40.00% completed...
+2016-04-05 15:51:51: 45.00% completed...
+2016-04-05 15:51:51: 50.00% completed...
+2016-04-05 15:51:51: 55.00% completed...
+2016-04-05 15:51:51: 60.00% completed...
+2016-04-05 15:51:51: 65.00% completed...
+2016-04-05 15:51:52: 70.00% completed...
+2016-04-05 15:51:52: 75.00% completed...
+2016-04-05 15:51:52: 80.00% completed...
+2016-04-05 15:51:52: 85.00% completed...
+2016-04-05 15:51:52: 90.00% completed...
+2016-04-05 15:51:52: 95.00% completed...
+2016-04-05 15:51:52: 100.00% completed.
+2016-04-05 15:51:52: End of calculation.
+2016-04-05 15:51:52: Total calculation time: 3884 ms.
+Andrews-MacBook-Pro:final_trees brooks$ 
+Andrews-MacBook-Pro:final_trees brooks$ 
+Andrews-MacBook-Pro:final_trees brooks$ # STOCHASTIC COMPARE #
+Andrews-MacBook-Pro:final_trees brooks$ ds="nasonia"
+Andrews-MacBook-Pro:final_trees brooks$ methodin="ms"
+Andrews-MacBook-Pro:final_trees brooks$ refin=$ds"/newick/ht.newick"
+Andrews-MacBook-Pro:final_trees brooks$ comparein=$ds"/random_trees.newick"
+Andrews-MacBook-Pro:final_trees brooks$ out=$ds"/treecmp_"$methodin"_stochastic_norm.txt"
+Andrews-MacBook-Pro:final_trees brooks$ java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+TreeCmp version 1.0-b291
+
+Active options:
+Type of the analysis:  one-to-all comparison mode (-r)
+Metrics:
+  1. MatchingSplit (ms)
+Input file: nasonia/random_trees.newick
+Output file: nasonia/treecmp_ms_stochastic_norm.txt
+Additional options:
+N - Report normalized distances.
+-----
+2016-04-05 15:51:57: Start of reading random statistics.
+2016-04-05 15:51:57: End of reading random statistics.
+2016-04-05 15:51:57: Start of scanning input file: nasonia/random_trees.newick
+2016-04-05 15:51:58: End of scanning input file: nasonia/random_trees.newick
+2016-04-05 15:51:58: 100000 valid trees found in file: nasonia/random_trees.newick
+2016-04-05 15:51:58: Start of calculation...please wait...
+2016-04-05 15:51:58: 0.00% completed...
+2016-04-05 15:51:59: 5.00% completed...
+2016-04-05 15:51:59: 10.00% completed...
+2016-04-05 15:51:59: 15.00% completed...
+2016-04-05 15:51:59: 20.00% completed...
+2016-04-05 15:51:59: 25.00% completed...
+2016-04-05 15:51:59: 30.00% completed...
+2016-04-05 15:51:59: 35.00% completed...
+2016-04-05 15:51:59: 40.00% completed...
+2016-04-05 15:52:00: 45.00% completed...
+2016-04-05 15:52:00: 50.00% completed...
+2016-04-05 15:52:00: 55.00% completed...
+2016-04-05 15:52:00: 60.00% completed...
+2016-04-05 15:52:00: 65.00% completed...
+2016-04-05 15:52:00: 70.00% completed...
+2016-04-05 15:52:00: 75.00% completed...
+2016-04-05 15:52:00: 80.00% completed...
+2016-04-05 15:52:00: 85.00% completed...
+2016-04-05 15:52:00: 90.00% completed...
+2016-04-05 15:52:00: 95.00% completed...
+2016-04-05 15:52:01: 100.00% completed.
+2016-04-05 15:52:01: End of calculation.
+2016-04-05 15:52:01: Total calculation time: 2416 ms.
+Andrews-MacBook-Pro:final_trees brooks$ 
+Andrews-MacBook-Pro:final_trees brooks$ 
+Andrews-MacBook-Pro:final_trees brooks$ # STOCHASTIC COMPARE #
+Andrews-MacBook-Pro:final_trees brooks$ ds="peromyscus"
+Andrews-MacBook-Pro:final_trees brooks$ methodin="ms"
+Andrews-MacBook-Pro:final_trees brooks$ refin=$ds"/newick/ht.newick"
+Andrews-MacBook-Pro:final_trees brooks$ comparein=$ds"/random_trees.newick"
+Andrews-MacBook-Pro:final_trees brooks$ out=$ds"/treecmp_"$methodin"_stochastic_norm.txt"
+Andrews-MacBook-Pro:final_trees brooks$ java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+TreeCmp version 1.0-b291
+
+Active options:
+Type of the analysis:  one-to-all comparison mode (-r)
+Metrics:
+  1. MatchingSplit (ms)
+Input file: peromyscus/random_trees.newick
+Output file: peromyscus/treecmp_ms_stochastic_norm.txt
+Additional options:
+N - Report normalized distances.
+-----
+2016-04-05 15:52:09: Start of reading random statistics.
+2016-04-05 15:52:10: End of reading random statistics.
+2016-04-05 15:52:10: Start of scanning input file: peromyscus/random_trees.newick
+2016-04-05 15:52:11: End of scanning input file: peromyscus/random_trees.newick
+2016-04-05 15:52:11: 100000 valid trees found in file: peromyscus/random_trees.newick
+2016-04-05 15:52:11: Start of calculation...please wait...
+2016-04-05 15:52:11: 0.00% completed...
+2016-04-05 15:52:11: 5.00% completed...
+2016-04-05 15:52:12: 10.00% completed...
+2016-04-05 15:52:12: 15.00% completed...
+2016-04-05 15:52:12: 20.00% completed...
+2016-04-05 15:52:12: 25.00% completed...
+2016-04-05 15:52:12: 30.00% completed...
+2016-04-05 15:52:12: 35.00% completed...
+2016-04-05 15:52:12: 40.00% completed...
+2016-04-05 15:52:13: 45.00% completed...
+2016-04-05 15:52:13: 50.00% completed...
+2016-04-05 15:52:13: 55.00% completed...
+2016-04-05 15:52:13: 60.00% completed...
+2016-04-05 15:52:13: 65.00% completed...
+2016-04-05 15:52:13: 70.00% completed...
+2016-04-05 15:52:13: 75.00% completed...
+2016-04-05 15:52:14: 80.00% completed...
+2016-04-05 15:52:14: 85.00% completed...
+2016-04-05 15:52:14: 90.00% completed...
+2016-04-05 15:52:14: 95.00% completed...
+2016-04-05 15:52:14: 100.00% completed.
+2016-04-05 15:52:14: End of calculation.
+2016-04-05 15:52:14: Total calculation time: 3146 ms.
+Andrews-MacBook-Pro:final_trees brooks$ 
+
+##########################################################################################
+# NASONIA EXAMPLE OUTPUT
+Last login: Tue Apr  5 14:01:14 on ttys006
+Andrews-MacBook-Pro:final_trees brooks$ 
+Andrews-MacBook-Pro:final_trees brooks$ ds="nasonia"
+Andrews-MacBook-Pro:final_trees brooks$ methodin="ms"
+Andrews-MacBook-Pro:final_trees brooks$ 
+Andrews-MacBook-Pro:final_trees brooks$ refin=$ds"/newick/ht.newick"
+Andrews-MacBook-Pro:final_trees brooks$ comparein=$ds"/newick/mt.newick"
+Andrews-MacBook-Pro:final_trees brooks$ out=$ds"/treecmp_"$methodin".txt"
+Andrews-MacBook-Pro:final_trees brooks$ java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out
+TreeCmp version 1.0-b291
+
+Active options:
+Type of the analysis:  one-to-all comparison mode (-r)
+Metrics:
+  1. MatchingSplit (ms)
+Input file: nasonia/newick/mt.newick
+Output file: nasonia/treecmp_ms.txt
+-----
+2016-04-05 20:10:14: Start of scanning input file: nasonia/newick/mt.newick
+2016-04-05 20:10:14: End of scanning input file: nasonia/newick/mt.newick
+2016-04-05 20:10:14: 1 valid trees found in file: nasonia/newick/mt.newick
+2016-04-05 20:10:14: Start of calculation...please wait...
+2016-04-05 20:10:14: 0.00% completed...
+2016-04-05 20:10:14: 100.00% completed.
+2016-04-05 20:10:14: End of calculation.
+2016-04-05 20:10:14: Total calculation time: 23 ms.
+Andrews-MacBook-Pro:final_trees brooks$ 
+Andrews-MacBook-Pro:final_trees brooks$ out=$ds"/treecmp_"$methodin"_norm.txt"
+Andrews-MacBook-Pro:final_trees brooks$ java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+TreeCmp version 1.0-b291
+
+Active options:
+Type of the analysis:  one-to-all comparison mode (-r)
+Metrics:
+  1. MatchingSplit (ms)
+Input file: nasonia/newick/mt.newick
+Output file: nasonia/treecmp_ms_norm.txt
+Additional options:
+N - Report normalized distances.
+-----
+2016-04-05 20:10:14: Start of reading random statistics.
+2016-04-05 20:10:14: End of reading random statistics.
+2016-04-05 20:10:14: Start of scanning input file: nasonia/newick/mt.newick
+2016-04-05 20:10:14: End of scanning input file: nasonia/newick/mt.newick
+2016-04-05 20:10:14: 1 valid trees found in file: nasonia/newick/mt.newick
+2016-04-05 20:10:14: Start of calculation...please wait...
+2016-04-05 20:10:14: 0.00% completed...
+2016-04-05 20:10:14: 100.00% completed.
+2016-04-05 20:10:14: End of calculation.
+2016-04-05 20:10:14: Total calculation time: 15 ms.
+Andrews-MacBook-Pro:final_trees brooks$ 
+Andrews-MacBook-Pro:final_trees brooks$ methodin="rf"
+Andrews-MacBook-Pro:final_trees brooks$ out=$ds"/treecmp_"$methodin".txt"
+Andrews-MacBook-Pro:final_trees brooks$ java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out
+TreeCmp version 1.0-b291
+
+Active options:
+Type of the analysis:  one-to-all comparison mode (-r)
+Metrics:
+  1. R-F (rf)
+Input file: nasonia/newick/mt.newick
+Output file: nasonia/treecmp_rf.txt
+-----
+2016-04-05 20:10:14: Start of scanning input file: nasonia/newick/mt.newick
+2016-04-05 20:10:14: End of scanning input file: nasonia/newick/mt.newick
+2016-04-05 20:10:14: 1 valid trees found in file: nasonia/newick/mt.newick
+2016-04-05 20:10:14: Start of calculation...please wait...
+2016-04-05 20:10:14: 0.00% completed...
+2016-04-05 20:10:14: 100.00% completed.
+2016-04-05 20:10:14: End of calculation.
+2016-04-05 20:10:14: Total calculation time: 15 ms.
+Andrews-MacBook-Pro:final_trees brooks$ 
+Andrews-MacBook-Pro:final_trees brooks$ out=$ds"/treecmp_"$methodin"_norm.txt"
+Andrews-MacBook-Pro:final_trees brooks$ java -jar TreeCmp/bin/TreeCmp.jar -r $refin -d $methodin -i $comparein -o $out -N
+TreeCmp version 1.0-b291
+
+Active options:
+Type of the analysis:  one-to-all comparison mode (-r)
+Metrics:
+  1. R-F (rf)
+Input file: nasonia/newick/mt.newick
+Output file: nasonia/treecmp_rf_norm.txt
+Additional options:
+N - Report normalized distances.
+-----
+2016-04-05 20:10:16: Start of reading random statistics.
+2016-04-05 20:10:16: End of reading random statistics.
+2016-04-05 20:10:16: Start of scanning input file: nasonia/newick/mt.newick
+2016-04-05 20:10:16: End of scanning input file: nasonia/newick/mt.newick
+2016-04-05 20:10:16: 1 valid trees found in file: nasonia/newick/mt.newick
+2016-04-05 20:10:16: Start of calculation...please wait...
+2016-04-05 20:10:16: 0.00% completed...
+2016-04-05 20:10:16: 100.00% completed.
+2016-04-05 20:10:16: End of calculation.
+2016-04-05 20:10:16: Total calculation time: 15 ms.
+Andrews-MacBook-Pro:final_trees brooks$ 
+Andrews-MacBook-Pro:final_trees brooks$ 

@@ -1,0 +1,2 @@
+Tree	R-F_Cluster	R-F_Cluster_toYuleAvg	R-F_Cluster_toUnifAvg
+1	0.0000	0.0000	0.0000

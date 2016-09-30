@@ -1,0 +1,27 @@
+
+body
+{
+	/* background-color: #e6ff95; */
+	margin-left: 50px;
+	margin-right: 50px;
+	position: relative;
+	left: 10px;
+	min-width: 850px;
+}
+.img_left
+{
+	float: left;
+}
+.img_right
+{
+
+	float:right;
+}
+.img_border
+{
+	border-bottom: #0000ff thin solid;
+	border-left: #0000ff thin solid;
+	border-top: #0000ff thin solid;
+	border-right: #0000ff thin solid;
+	margin-left: 30px;
+}

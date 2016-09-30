@@ -1,0 +1,48 @@
+
+  ___  ____  ____  ____  ____ (R)
+ /__    /   ____/   /   ____/
+___/   /   /___/   /   /___/   12.0   Copyright 1985-2011 StataCorp LP
+  Statistics/Data Analysis            StataCorp
+                                      4905 Lakeway Drive
+     Special Edition                  College Station, Texas 77845 USA
+                                      800-STATA-PC        http://www.stata.com
+                                      979-696-4600        stata@stata.com
+                                      979-696-4601 (fax)
+
+Single-user Stata network perpetual license:
+       Serial number:  93611859953
+         Licensed to:  STATAforAll
+                       STATA
+
+
+
+#Clade		Age(MYA)	ANOSIM	Log10(Age)
+var1		var2		var4	lage
+Mosquito	108			.93		2.033424
+Drosophila	12.8		.77		1.10721
+Peromyscus	7			.58		.845098
+Hominid		9			.66		.9542425
+Nasonia		1			.34		0
+
+
+gen lage = log10(var2)
+
+
+
+scatter anosim lage || lfit anosim lage
+
+regress anosim lage
+
+      Source |       SS       df       MS              Number of obs =       5
+-------------+------------------------------           F(  1,     3) =   49.93
+       Model |  .182739827     1  .182739827           Prob > F      =  0.0058
+    Residual |  .010980173     3  .003660058           R-squared     =  0.9433
+-------------+------------------------------           Adj R-squared =  0.9244
+       Total |      .19372     4      .04843           Root MSE      =   .0605
+
+------------------------------------------------------------------------------
+      anosim |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+        lage |   .2668362   .0377635     7.07   0.006     .1466559    .3870164
+       _cons |   .3435614    .051838     6.63   0.007     .1785897    .5085331
+------------------------------------------------------------------------------
